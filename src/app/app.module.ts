@@ -8,6 +8,10 @@ import { ExtensionsComponent } from './components/extensions/extensions.componen
 import { MainComponent } from './pages/main/main.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeroComponent } from './components/hero/hero.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
+import { SkillsetComponent } from './pages/skillset/skillset.component';
+import { TerminalComponent } from './pages/terminal/terminal.component';
+import { FooterComponent } from './pages/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { HeroComponent } from './components/hero/hero.component';
     SidenavComponent,
     ExtensionsComponent,
     MainComponent,
-    HeroComponent
+    HeroComponent,
+    GalleryComponent,
+    SkillsetComponent,
+    TerminalComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
