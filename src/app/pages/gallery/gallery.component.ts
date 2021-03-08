@@ -18,7 +18,7 @@ export class GalleryComponent implements OnInit {
       text: "#000000",
       color: "#334956",
       logo: "./../../../assets/images/proj_logos/EightAnd.png",
-      desc: "A fullstack application, currently in development.",
+      desc: "A fullstack application, currently in development with K. Martinez and A. Ato.",
       tags: ["fullstack","xd", "ionic", "angular"],
       repoUrl: "",
       liveUrl: ""
@@ -28,7 +28,7 @@ export class GalleryComponent implements OnInit {
       text: "black",
       color: "#8BDDD7",
       logo: "./../../../assets/images/proj_logos/tokay.svg",
-      desc: "Project to redevlop a local business' website, turned real business solution. Collab with M. Mendoza.",
+      desc: "Project to redevelop a local business' website, turned real business solution. Collab with M. Mendoza.",
       tags: ["html", "css", "javascript"],
       repoUrl: "https://josephracca.github.io/josephracca.github.io/",
       liveUrl: "https://www.tokaypress.com/"

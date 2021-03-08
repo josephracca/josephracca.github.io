@@ -11,7 +11,7 @@ export class SkillsetComponent implements OnInit {
   icon: string = "./../../../assets/images/Icons/";
 
 
-  devflow: string[] = ["dev_angular.svg", "dev_react.svg", "dev_javascript.svg", "dev_csharp.svg", "dev_bootstrap.svg",  "dev_css3.svg", "dev_html5.svg"
+  devflow: string[] = ["dev_csharp.svg", "dev_javascript.svg", "dev_react.svg", "dev_angular.svg", "dev_css3.svg", "dev_html5.svg", "dev_bootstrap.svg"
   ].map(e => `${this.icon}${e}`)
 
   creativeFlow: string[] = ["cc.svg", "cc_xd.svg", "cc_ai.svg", "cc_ps.svg", "cc_id.svg", "cc_tk.svg", "cc_ac.svg"
