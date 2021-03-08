@@ -1,3 +1,21 @@
+div#hoverProject div#first
+    display: flex
+    transition: flex 2s
+
+div#hoverProject:hover div#first
+    display: none
+    transition: none 2s
+
+div#hoverProject div#second
+    display: none
+    transition: flex 2s
+
+div#hoverProject:hover div#second
+    display: flex
+    transition: flex 2s
+        position: absolute
+
+
 .projectBox
     width: 250px
     height: 250px
@@ -7,6 +25,18 @@
     align-items: center
     transition: background-color 1s, color 1s
 
-.projectBox:hover
-    background-color: white
-    color: black
+// .projectBox:hover
+//     background-color: white
+//     color: black
+//     display: none
+
+.projectBoxBack
+    background-color: #00000090
+    width: 250px
+    height: 250px
+    // display: flex
+    
+    justify-content: center
+    align-items: center
+    transition: background-color 1s, color 1s
+    text-align: center

@@ -9,9 +9,32 @@
         <span class="badge badge-pill badge-dark">#html</span>
     </h3>
     <hr>
-<div class="row d-flex justify-content-center">
-        <div class="projectBox" *ngFor="let project of projects, index as i">
-            {{project}}
+    <div class="row d-flex justify-content-center">
+        <div id="hoverProject" *ngFor="let project of projectList, index as i">
+
+            <div id="first" class="projectBox" style="color: {{project.text}}; background-color: {{project.color}};" >
+                <!-- {{project.name}} -->
+                <img src={{project.logo}} />
+
+            </div>
+
+            <div id="second" class="projectBoxBack col" style="color: white; background-color: {{project.color}}">
+                <div class="row">
+                    <div class="col-12">
+                        <h5>{{project.name}}</h5>
+                    </div>
+                    <div class="col-12">
+                        <p>
+                            {{project.desc}}
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <a href={{project.repoUrl}} target="_blank"><img src="./../../../assets/images/project_card/Icon awesome-github.svg" alt="gh logo"/></a> | <a href={{project.liveUrl}} target="_blank"><img src="./../../../assets/images/project_card/Icon ionic-md-open.svg" /></a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-</div>
+
+    </div>
 </div>
