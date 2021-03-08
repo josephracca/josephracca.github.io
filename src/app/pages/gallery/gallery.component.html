@@ -1,18 +1,19 @@
 <div class="container-fluid mx-0 px-0 my-5 p-5" style="background-color: rgb(34, 34, 34);">
-    <h3>MY WORK <span class="badge badge-pill badge-primary">#process</span>
+    <h3>MY WORK
+        <!-- <span class="badge badge-pill badge-primary">#process</span>
         <span class="badge badge-pill badge-secondary">#csharp</span>
         <span class="badge badge-pill badge-success">#javascript</span>
         <span class="badge badge-pill badge-danger">#angular</span>
         <span class="badge badge-pill badge-warning">#design</span>
         <span class="badge badge-pill badge-info">#react</span>
         <span class="badge badge-pill badge-light">#css</span>
-        <span class="badge badge-pill badge-dark">#html</span>
+        <span class="badge badge-pill badge-dark">#html</span> -->
     </h3>
     <hr>
     <div class="row d-flex justify-content-center">
         <div id="hoverProject" *ngFor="let project of projectList, index as i">
 
-            <div id="first" class="projectBox" style="color: {{project.text}}; background-color: {{project.color}};" >
+            <div id="first" class="projectBox" style="color: {{project.text}}; background-color: {{project.color}};">
                 <!-- {{project.name}} -->
                 <img src={{project.logo}} />
 
@@ -24,12 +25,18 @@
                         <h5>{{project.name}}</h5>
                     </div>
                     <div class="col-12">
-                        <p>
+                        <p class="adjustLine">
                             {{project.desc}}
                         </p>
+                        <span class="hashtag" *ngFor="let tag of project.tags">#{{tag}} </span>
+
                     </div>
-                    <div class="col-12">
-                        <a href={{project.repoUrl}} target="_blank"><img src="./../../../assets/images/project_card/Icon awesome-github.svg" alt="gh logo"/></a> | <a href={{project.liveUrl}} target="_blank"><img src="./../../../assets/images/project_card/Icon ionic-md-open.svg" /></a>
+                    <div class="col-12 mt-2">
+                        <a href={{project.repoUrl}} target="_blank"><img *ngIf="project.repoUrl"
+                                src="./../../../assets/images/project_card/Icon awesome-github.svg" alt="gh logo" /></a>
+                        <span *ngIf="project.repoUrl && project.liveUrl"> | </span>
+                        <a href={{project.liveUrl}} target="_blank"><img *ngIf="project.liveUrl"
+                                src="./../../../assets/images/project_card/Icon ionic-md-open.svg" /></a>
                     </div>
                 </div>
             </div>

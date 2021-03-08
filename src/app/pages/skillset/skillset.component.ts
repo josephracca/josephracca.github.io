@@ -17,7 +17,7 @@ export class SkillsetComponent implements OnInit {
   creativeFlow: string[] = ["cc.svg", "cc_xd.svg", "cc_ai.svg", "cc_ps.svg", "cc_id.svg", "cc_tk.svg", "cc_ac.svg"
   ].map(e => `${this.icon}${e}`)
 
-  prodFlow: string[] = ["prod_apple.svg", "prod_code.svg", "prod_slack.svg", "prod_google.svg", "prod_notion.svg", "prod_jira.svg", "prod_fz.svg", "prod_pm.svg", "prod_not.svg"
+  prodFlow: string[] = ["prod_app.svg", "prod_code.svg", "prod_slack.svg", "prod_google.svg", "prod_notion.svg", "prod_jira.svg", "prod_fz.svg", "prod_pm.svg", "prod_not.svg"
   ].map(e => `${this.icon}${e}`)
 
   // devSkills: string[] = this.devflow;
