@@ -20,7 +20,7 @@ export class GalleryComponent implements OnInit {
       logo: "./../../../assets/images/proj_logos/EightAnd.png",
       desc: "A fullstack application, currently in development.",
       tags: ["fullstack","xd", "ionic", "angular"],
-      repoUrl: "https://www.github.com/josephracca",
+      repoUrl: "",
       liveUrl: ""
     },
     {
@@ -66,7 +66,7 @@ export class GalleryComponent implements OnInit {
     {
       name: "Top 10",
       text: "black",
-      color: "#FEFF9D",
+      color: "#3C75AD",
       logo: "./../../../assets/images/proj_logos/top10.svg",
       desc: "A collab with A Chansy, where we feature our top animes and video games.",
       tags: ["html", "css", "bootstrap", "collab"],
@@ -76,7 +76,7 @@ export class GalleryComponent implements OnInit {
     {
       name: "DoND: Rupaul Edition",
       text: "black",
-      color: "#FEBCEF",
+      color: "#B81556",
       logo: "./../../../assets/images/proj_logos/DoND.png",
       desc: "Deal or No Deal but sick'ning.",
       tags: ["csharp", "unity", "process", "beta"],
@@ -106,7 +106,7 @@ export class GalleryComponent implements OnInit {
     {
       name: "UpVote",
       text: "black",
-      color: "#EBEBEB",
+      color: "#C75656",
       logo: "./../../../assets/images/proj_logos/upvote.svg",
       desc: "Recreating the up vote feature of the Web Unleashed 2020 virtual conference",
       tags: ["html", "css", "javascript"],
@@ -136,7 +136,7 @@ export class GalleryComponent implements OnInit {
     {
       name: "RNG",
       text: "black",
-      color: "#FFFFFF",
+      color: "#9B3C9F",
       logo: "./../../../assets/images/proj_logos/random.svg",
       desc: "A random name generator that also manipulates the DOM with each random name!",
       tags: ["basics", "DOM", "html", "css", "js"],
