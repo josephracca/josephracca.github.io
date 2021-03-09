@@ -168,29 +168,29 @@ export class GalleryComponent implements OnInit {
       text: "black",
       color: "#181818",
       logo: "./../../../assets/images/proj_logos/DOM.svg",
-      desc: "A fullstack application, pitched from the ",
-      tags: ["pitch", "teamwork", "angular", "typescript"],
+      desc: "A project to teach us how to get comfortable manipulating the DOM.",
+      tags: ["basics", "fundamentals", "html", "css", "DOM"],
       repoUrl: "https://josephracca.github.io/josephracca.github.io/",
       liveUrl: "http://josephraccainit.azurewebsites.net/DOM/"
-    },
-    {
-      name: "!null",
-      text: "black",
-      color: "#464646",
-      logo: "",
-      desc: "Intentionally blank, hopefully to fill in with another soon and maybe one I can work on with + for you!",
-      tags: ["learn", "design", "develop", "repeat"],
-      repoUrl: "",
-      liveUrl: ""
     },
     {
       name: "More!?",
       text: "black",
       color: "#63686B",
-      logo: "./../../../assets/images/proj_logos/ellipses.svg",
+      logo: "./../../../assets/images/Icons/nav_jr.svg",
       desc: "Well if you've made it here...I love to eat, cook, dance, keep active, and love being a dad to my two pups and handful of plants!",
-      tags: ["aboutMe", "notJustADev", "noAIhere"],
+      tags: ["aboutMe", "notJustADev", "noAIhere", "plantLover", "dogDad"],
       repoUrl: "https://github.com/josephracca",
+      liveUrl: ""
+    },
+    {
+      name: "!null",
+      text: "black",
+      color: "#464646",
+      logo: "./../../../assets/images/proj_logos/ellipses.svg",
+      desc: "Intentionally blank, hopefully to fill in with another soon and maybe one I can work on with + for you!",
+      tags: ["learn", "design", "develop", "repeat"],
+      repoUrl: "",
       liveUrl: ""
     },
   ];

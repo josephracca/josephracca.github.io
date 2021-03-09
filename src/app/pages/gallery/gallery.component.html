@@ -10,7 +10,7 @@
         <span class="badge badge-pill badge-dark">#html</span> -->
     </h3>
     <hr>
-    <div class="row d-flex justify-content-center">
+    <div class="row d-flex justify-content-left">
         <div id="hoverProject" *ngFor="let project of projectList, index as i">
 
             <div id="first" class="projectBox" style="color: {{project.text}}; background-color: {{project.color}};">
@@ -19,7 +19,7 @@
 
             </div>
 
-            <div id="second" class="projectBoxBack col" style="color: white; background-color: {{project.color}}">
+            <div id="second" class="projectBoxBack col fadeIn" style="color: white; background-color: {{project.color}}">
                 <div class="row">
                     <div class="col-12">
                         <h5>{{project.name}}</h5>
@@ -28,7 +28,7 @@
                         <p class="adjustLine">
                             {{project.desc}}
                         </p>
-                        <span class="hashtag" *ngFor="let tag of project.tags">#{{tag}} </span>
+                        <span class="hashtag" *ngFor="let tag of project.tags">#{{tag}}</span><span> </span>
 
                     </div>
                     <div class="col-12 mt-2">
