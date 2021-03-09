@@ -128,7 +128,7 @@ export class GalleryComponent implements OnInit {
       text: "black",
       color: "#E96E51",
       logo: "./../../../assets/images/proj_logos/cloud.png",
-      desc: "A weather application, origninally designed by H. Mejia, then developed by yours truly.",
+      desc: "A weather application, originally designed and prototyped by H. Mejia, then developed by yours truly.",
       tags: ["switchedAtCode", "collab", "APIcall", "Xd"],
       repoUrl: "https://github.com/josephracca/fyreWeather",
       liveUrl: "http://josephracca.azurewebsites.net/weather.gogh2/"
