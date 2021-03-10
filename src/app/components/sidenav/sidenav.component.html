@@ -1,4 +1,6 @@
-<div class="container-fluid px-0 mr-5 fullH stick" style="z-index: -1;">
+<app-extensions></app-extensions>
+
+<div class="px-0 mr-5 fullH stick">
     <div class="sidenav d-flex flex-column justify-content-between">
         <div>
             <div class="iconBox">
@@ -7,7 +9,7 @@
             <div class="iconBox">
                 <a href="https://github.com/josephracca" target="_blank"><img class="shrink" src="./../../../assets/images/Icons/nav_github.svg"></a>
             </div>
-            <div class="iconBox">
+            <div class="iconBox" (click)="comingSoon()">
                 <img class="shrink" src="./../../../assets/images/Icons/nav_ext.svg" style="opacity: 15%;">
             </div>
             <div class="iconBox">

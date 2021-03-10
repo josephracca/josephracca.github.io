@@ -12,4 +12,8 @@ export class SidenavComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  comingSoon(){
+    alert('Extensions on their way...check back soon!')
+  }
+
 }
