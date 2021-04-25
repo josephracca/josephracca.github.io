@@ -6,7 +6,12 @@
             <hr>
             <div class="row justify-content-center">
                 <!-- <div *ngFor="let skill of code" class="icons">{{skill}}</div> -->
-                <img src={{skill}} *ngFor="let skill of devflow" alt="icon" class="icons" />
+                <div *ngFor="let skill of devflow; index as i">
+                    <img src={{skill.path}} alt="{{skill.name}} icon" class="icons" />
+                    <div class="col-12 text-center">
+                        {{skill.name}}
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-12 col-lg-4  pb-5 maxOut">
@@ -14,7 +19,12 @@
             </h3>
             <hr>
             <div class="row justify-content-center">
-                <img src={{skill}} *ngFor="let skill of creativeFlow" alt="icon" class="icons" />
+                <div *ngFor="let skill of creativeFlow; index as i">
+                    <img src={{skill.path}} alt="{{skill.name}} icon" class="icons" />
+                    <div class="col-12 text-center">
+                        {{skill.name}}
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-12 col-lg-4  pb-5 maxOut">
@@ -22,7 +32,12 @@
             </h3>
             <hr>
             <div class="row justify-content-center">
-                <img src={{skill}} *ngFor="let skill of prodFlow" alt="icon" class="icons sm" />
+                <div *ngFor="let skill of prodFlow; index as i">
+                    <img src={{skill.path}} alt="{{skill.name}} icon" class="icons" />
+                    <div class="col-12 text-center">
+                        {{skill.name}}
+                    </div>
+                </div>
             </div>
         </div>
     </div>

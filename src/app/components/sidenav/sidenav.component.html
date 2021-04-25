@@ -1,22 +1,22 @@
-<app-extensions></app-extensions>
+<app-extensions  *ngIf="openExt"></app-extensions>
 
 <div class="px-0 mr-5 fullH stick">
     <div class="sidenav d-flex flex-column justify-content-between">
         <div>
             <div class="iconBox">
-                <img class="shrink" src="./../../../assets/images/Icons/nav_jr.svg">
+                <img class="shrink" src="./../../assets/images/jr_logo_lg.svg">
             </div>
-            <div class="iconBox">
+            <div class="iconBox" (click)="comingSoon()" title="extensions, coming soon!">
+                <img class="shrink" src="./../../../assets/images/Icons/nav_ext.svg">
+            </div>
+            <div class="iconBox" title="open on github">
                 <a href="https://github.com/josephracca" target="_blank"><img class="shrink" src="./../../../assets/images/Icons/nav_github.svg"></a>
             </div>
-            <div class="iconBox" (click)="comingSoon()">
-                <img class="shrink" src="./../../../assets/images/Icons/nav_ext.svg" style="opacity: 15%;">
-            </div>
-            <div class="iconBox">
+            <div class="iconBox" title="open on codewars">
                 <a href="https://www.codewars.com/users/josephracca" target="_blank"><img class="shrink" src="./../../../assets/images/Icons/nav_codewars.svg"></a>
             </div>
         </div>
-        <div class="iconBox">
+        <div class="iconBox" title="got to my instagram">
             <a href="https://www.instagram.com/jracca/" target="_blank"><img class="shrink" src="./../../../assets/images/Icons/nav_ig.svg"></a>
         </div>
     </div>

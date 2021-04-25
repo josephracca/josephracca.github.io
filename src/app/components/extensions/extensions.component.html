@@ -1,6 +1,7 @@
 <!-- <p>extensions works!</p> -->
-<div id="mySidenav" class="sidenav" *ngIf="openExt">
-    MY LATEST PROJECTS<a href="javascript:void(0)" class="closebtn" (click)="closeExt()">&times;</a>
+<div id="mySidenav" class="sidenav">
+    MY LATEST PROJECTS
+    <a href="javascript:void(0)" class="closebtn" (click)="closeExt()">&times;</a>
     <div *ngFor="let project of projectList" class="d-flex">
         <div class="row my-3 d-flex align-items-center">
             <div class="logo" style="background-color: {{project.color}}; border-radius: 50%">

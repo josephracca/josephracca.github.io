@@ -11,14 +11,109 @@ export class SkillsetComponent implements OnInit {
   icon: string = "./../../../assets/images/Icons/";
 
 
-  devflow: string[] = ["dev_csharp.svg", "dev_javascript.svg", "dev_react.svg", "dev_angular.svg", "dev_css3.svg", "dev_html5.svg", "dev_bootstrap.svg"
-  ].map(e => `${this.icon}${e}`)
+  devflow = [
+    {
+      name: "C#",
+      path: "./../../../assets/images/Icons/dev_csharp.svg"
+    },
+    {
+      name: "JavaScript",
+      path: "./../../../assets/images/Icons/dev_javascript.svg"
+    },
+    {
+      name: "React",
+      path: "./../../../assets/images/Icons/dev_react.svg"
+    },
+    {
+      name: "Angular",
+      path: "./../../../assets/images/Icons/dev_angular.svg"
+    },
+    {
+      name: "CSS",
+      path: "./../../../assets/images/Icons/dev_css3.svg"
+    },
+    {
+      name: "HTML",
+      path: "./../../../assets/images/Icons/dev_html5.svg"
+    },
+    {
+      name: "Bootstrap",
+      path: "./../../../assets/images/Icons/dev_bootstrap.svg"
+    },
 
-  creativeFlow: string[] = ["cc.svg", "cc_xd.svg", "cc_ai.svg", "cc_ps.svg", "cc_id.svg", "cc_tk.svg", "cc_ac.svg"
-  ].map(e => `${this.icon}${e}`)
+  ]
 
-  prodFlow: string[] = ["prod_app.svg", "prod_code.svg", "prod_slack.svg", "prod_google.svg", "prod_notion.svg", "prod_jira.svg", "prod_fz.svg", "prod_pm.svg", "prod_not.svg"
-  ].map(e => `${this.icon}${e}`)
+  creativeFlow = [
+    {
+      name: "Cloud",
+      path: "./../../../assets/images/Icons/cc.svg"
+    },
+    {
+      name: "Xd",
+      path: "./../../../assets/images/Icons/cc_xd.svg"
+    },
+    {
+      name: "Illustrator",
+      path: "./../../../assets/images/Icons/cc_ai.svg"
+    },
+    {
+      name: "Photoshop",
+      path: "./../../../assets/images/Icons/cc_ps.svg"
+    },
+    {
+      name: "InDesign",
+      path: "./../../../assets/images/Icons/cc_id.svg"
+    },
+    {
+      name: "TypeKit",
+      path: "./../../../assets/images/Icons/cc_tk.svg"
+    },
+    {
+      name: "Acrobat",
+      path: "./../../../assets/images/Icons/cc_ac.svg"
+    },
+
+  ]
+
+  prodFlow = [
+    {
+      name: "Mac + iOS",
+      path: "./../../../assets/images/Icons/prod_app.svg"
+    },
+    {
+      name: "VS Code",
+      path: "./../../../assets/images/Icons/prod_code.svg"
+    },
+    {
+      name: "Slack",
+      path: "./../../../assets/images/Icons/prod_slack.svg"
+    },
+    {
+      name: "Google",
+      path: "./../../../assets/images/Icons/prod_google.svg"
+    },
+    {
+      name: "Notion",
+      path: "./../../../assets/images/Icons/prod_notion.svg"
+    },
+    {
+      name: "Jira",
+      path: "./../../../assets/images/Icons/prod_jira.svg"
+    },
+    {
+      name: "FileZilla",
+      path: "./../../../assets/images/Icons/prod_fz.svg"
+    },
+    {
+      name: "Postman",
+      path: "./../../../assets/images/Icons/prod_pm.svg"
+    },
+    {
+      name: "Notability",
+      path: "./../../../assets/images/Icons/prod_not.svg"
+    },
+
+  ]
 
   // devSkills: string[] = this.devflow;
 

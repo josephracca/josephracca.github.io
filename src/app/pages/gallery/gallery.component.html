@@ -1,13 +1,14 @@
 <div class="container-fluid mx-0 px-0 my-5 p-5" style="background-color: rgb(34, 34, 34);">
     <h3>MY WORK
-        <span class="hashtag hashtagLg">#process</span>
-        <span class="hashtag hashtagLg">#csharp</span>
-        <span class="hashtag hashtagLg">#javascript</span>
-        <span class="hashtag hashtagLg">#angular</span>
-        <span class="hashtag hashtagLg">#design</span>
-        <span class="hashtag hashtagLg">#react</span>
-        <span class="hashtag hashtagLg">#css</span>
-        <span class="hashtag hashtagLg">#html</span>
+        <span class="hashtag hashtagLg" (click)="filterProjects('process')">#process</span>
+        <span class="hashtag hashtagLg" (click)="filterProjects('csharp')">#csharp</span>
+        <span class="hashtag hashtagLg" (click)="filterProjects('javascript')">#javascript</span>
+        <span class="hashtag hashtagLg" (click)="filterProjects('angular')">#angular</span>
+        <span class="hashtag hashtagLg" (click)="filterProjects('design')">#design</span>
+        <span class="hashtag hashtagLg" (click)="filterProjects('react')">#react</span>
+        <span class="hashtag hashtagLg" (click)="filterProjects('css')">#css</span>
+        <span class="hashtag hashtagLg" (click)="filterProjects('html')">#html</span>
+        <span class="hashtag hashtagLg" (click)="ngOnInit()">Clear Filters</span>
     </h3>
     <hr>
     <div class="row d-flex justify-content-center px-0 mx-0">
@@ -15,11 +16,21 @@
 
             <div id="first" class="projectBox" style="color: {{project.text}}; background-color: {{project.color}};">
                 <!-- {{project.name}} -->
-                <img src={{project.logo}} />
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row d-flex justify-content-center">
+                            <img src={{project.logo}} />
+                        </div>
+                        <!-- <div class="row">
+                            <h5 class="text-center pt-3">{{project.name}}</h5>
+                        </div> -->
+                    </div>
+                </div>
 
             </div>
 
-            <div id="second" class="projectBoxBack col fadeIn" style="color: white; background-color: {{project.color}}">
+            <div id="second" class="projectBoxBack col fadeIn"
+                style="color: white; background-color: {{project.color}}">
                 <div class="row">
                     <div class="col-12">
                         <h5>{{project.name}}</h5>
