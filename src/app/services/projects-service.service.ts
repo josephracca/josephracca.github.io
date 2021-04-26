@@ -11,11 +11,21 @@ export class ProjectsServiceService {
   private projectList: IProject[] = [
     {
       name: "EightAnd",
-      text: "#000000",
+      text: "#FFFFFF",
       color: "#334956",
       logo: "./../../../assets/images/proj_logos/EightAnd.png",
-      desc: "A fullstack application, currently in development with K. Martinez and A. Ato.",
-      tags: ["fullstack", "xd", "ionic", "angular"],
+      desc: "A fullstack application, currently in development with A. Ato., K. Martinez, and C. Gonzalez.",
+      tags: ["fullstack", "xd", "ionic", "angular", "csharp", "frontend", "backend"],
+      repoUrl: "",
+      liveUrl: ""
+    },
+    {
+      name: "Health Force Partners Internship",
+      text: "black",
+      color: "#0F6480",
+      logo: "./../../../assets/images/proj_logos/HFP.svg",
+      desc: "Responsible for redesigning the organization's website to be later built using Velo by Wix. Co-designed with A. Chansy and developed with T. Womack, J. Morales, and K. Martinez,",
+      tags: ["theinternship", "UI/UX", "design", "frontend", "redevelopment"],
       repoUrl: "",
       liveUrl: ""
     },
@@ -30,14 +40,44 @@ export class ProjectsServiceService {
       liveUrl: "https://www.tokaypress.com/"
     },
     {
-      name: "Health Force Partners",
+      name: "DoND: Rupaul Edition",
       text: "black",
-      color: "#0F6480",
-      logo: "./../../../assets/images/proj_logos/HFP.svg",
-      desc: "Internship: redesigning the organization's website to be later built using Wix. ",
-      tags: ["theinternship", "UI", "design", "frontend"],
+      color: "#B81556",
+      logo: "./../../../assets/images/proj_logos/DoND.png",
+      desc: "Deal or No Deal?! but sick'ning. Built in Unity, assets borrowed from multiple artists and sources online. Check back soon! I'm working on getting that built as a webGL on Unity.",
+      tags: ["csharp", "unity", "process", "beta"],
       repoUrl: "",
       liveUrl: ""
+    },
+    {
+      name: "All For One",
+      text: "black",
+      color: "#F7C52D",
+      logo: "./../../../assets/images/proj_logos/doggies.svg",
+      desc: "Originally built in Unity with C#, task was to recreate it in React. Check out the mini challenges and have fun!",
+      tags: ["react", "html", "css", "re-do", "csharp"],
+      repoUrl: "https://github.com/josephracca/a41",
+      liveUrl: "http://josephracca.azurewebsites.net/a41/"
+    },
+    {
+      name: "calculatoJr",
+      text: "black",
+      color: "#009E42",
+      logo: "./../../../assets/images/proj_logos/calc.svg",
+      desc: "A simple calculator app that allowed me to learn and use React.",
+      tags: ["html", "css", "react", "javascript"],
+      repoUrl: "https://github.com/josephracca/calculator",
+      liveUrl: "http://josephracca.azurewebsites.net/calculatoJr/"
+    },
+    {
+      name: "Weather.Gogh",
+      text: "black",
+      color: "#E96E51",
+      logo: "./../../../assets/images/proj_logos/cloud.png",
+      desc: "A weather application, originally designed and prototyped by H. Mejia, then developed by yours truly. Pulled data from OpenWeatherMap Weather API.",
+      tags: ["switchedAtCode", "collab", "APIcall", "Xd"],
+      repoUrl: "https://github.com/josephracca/fyreWeather",
+      liveUrl: "http://josephracca.azurewebsites.net/weather.gogh2/"
     },
     {
       name: "flash.commit",
@@ -70,31 +110,11 @@ export class ProjectsServiceService {
       liveUrl: "http://josephraccainit.azurewebsites.net/TopFaves/"
     },
     {
-      name: "DoND: Rupaul Edition",
-      text: "black",
-      color: "#B81556",
-      logo: "./../../../assets/images/proj_logos/DoND.png",
-      desc: "Deal or No Deal but sick'ning.",
-      tags: ["csharp", "unity", "process", "beta"],
-      repoUrl: "",
-      liveUrl: ""
-    },
-    {
-      name: "calculatoJr",
-      text: "black",
-      color: "#009E42",
-      logo: "./../../../assets/images/proj_logos/calc.svg",
-      desc: "A simple calculator app that allowed me to learn and use React.",
-      tags: ["html", "css", "react", "javascript"],
-      repoUrl: "https://github.com/josephracca/calculator",
-      liveUrl: "http://josephracca.azurewebsites.net/calculatoJr/"
-    },
-    {
       name: "R&OM",
       text: "black",
       color: "#0F2230",
       logo: "./../../../assets/images/proj_logos/R&OM.svg",
-      desc: "An app that allows you to add/remove names, randomize a name, or a groups based on size or by groups.",
+      desc: "An app that allows you to add/remove names from a list, randomize a name from said list, or generate groups based on size or number of groups desired.",
       tags: ["html", "css", "javascript", "ui"],
       repoUrl: "https://github.com/josephracca/randomGroupsApp",
       liveUrl: "http://josephracca.azurewebsites.net/randOM/"
@@ -110,46 +130,6 @@ export class ProjectsServiceService {
       liveUrl: "http://josephracca.azurewebsites.net/upvote/"
     },
     {
-      name: "All For One",
-      text: "black",
-      color: "#F7C52D",
-      logo: "./../../../assets/images/proj_logos/doggies.svg",
-      desc: "Originally built in Unity with C#, task was to recreate it in React. Check out the mini challenges and have fun!",
-      tags: ["react", "html", "css", "re-do", "csharp"],
-      repoUrl: "https://github.com/josephracca/a41",
-      liveUrl: "http://josephracca.azurewebsites.net/a41/"
-    },
-    {
-      name: "Weather.Gogh",
-      text: "black",
-      color: "#E96E51",
-      logo: "./../../../assets/images/proj_logos/cloud.png",
-      desc: "A weather application, originally designed and prototyped by H. Mejia, then developed by yours truly.",
-      tags: ["switchedAtCode", "collab", "APIcall", "Xd"],
-      repoUrl: "https://github.com/josephracca/fyreWeather",
-      liveUrl: "http://josephracca.azurewebsites.net/weather.gogh2/"
-    },
-    {
-      name: "RNG",
-      text: "black",
-      color: "#9B3C9F",
-      logo: "./../../../assets/images/proj_logos/random.svg",
-      desc: "A random name generator that also manipulates the DOM with each random name!",
-      tags: ["basics", "DOM", "html", "css", "js"],
-      repoUrl: "https://github.com/josephracca/MC11_RNGv2",
-      liveUrl: "http://josephraccainit.azurewebsites.net/RNGv2/"
-    },
-    {
-      name: "Le Petite Maison",
-      text: "black",
-      color: "#000324",
-      logo: "./../../../assets/images/proj_logos/hamster.png",
-      desc: "A fun school assignment to get used to working with Bootstrap. Book now!",
-      tags: ["fundamentals", "html", "css", "bootstrap"],
-      repoUrl: "",
-      liveUrl: "http://josephraccainit.azurewebsites.net/HamsterHotel/"
-    },
-    {
       name: "Muzzles",
       text: "black",
       color: "#5F022B",
@@ -158,6 +138,26 @@ export class ProjectsServiceService {
       tags: ["fundamentals", "teamwork", "github", "merge"],
       repoUrl: "https://github.com/josephracca/puppy-restaurant",
       liveUrl: "http://josephracca.azurewebsites.net/puppy-restaurant/"
+    },
+    {
+      name: "Le Petite Maison",
+      text: "black",
+      color: "#000324",
+      logo: "./../../../assets/images/proj_logos/hamster.png",
+      desc: "A fun school assignment to get used to working with Bootstrap. Book now!",
+      tags: ["fundamentals", "html", "css", "bootstrap"],
+      repoUrl: "https://github.com/josephracca/HamsterHotel",
+      liveUrl: "http://josephraccainit.azurewebsites.net/HamsterHotel/"
+    },
+    {
+      name: "Random Name Generator Version 1",
+      text: "black",
+      color: "#9B3C9F",
+      logo: "./../../../assets/images/proj_logos/random.svg",
+      desc: "A random name generator that also manipulates the DOM with each random name!",
+      tags: ["basics", "DOM", "html", "css", "js"],
+      repoUrl: "https://github.com/josephracca/MC11_RNGv2",
+      liveUrl: "http://josephraccainit.azurewebsites.net/RNGv2/"
     },
     {
       name: "DOM Manipulations",

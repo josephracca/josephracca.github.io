@@ -1,5 +1,5 @@
 <div class="container-fluid p-5">
-    <div class="row d-flex justify-content-between">
+    <div class="row d-flex justify-content-around">
         <div class="col-12 col-lg-4  pb-5 maxOut">
             <h3>DEV FLOW
             </h3>
@@ -8,7 +8,7 @@
                 <!-- <div *ngFor="let skill of code" class="icons">{{skill}}</div> -->
                 <div *ngFor="let skill of devflow; index as i">
                     <img src={{skill.path}} alt="{{skill.name}} icon" class="icons" />
-                    <div class="col-12 text-center">
+                    <div class="col-12 text-center iconName">
                         {{skill.name}}
                     </div>
                 </div>
@@ -21,7 +21,7 @@
             <div class="row justify-content-center">
                 <div *ngFor="let skill of creativeFlow; index as i">
                     <img src={{skill.path}} alt="{{skill.name}} icon" class="icons" />
-                    <div class="col-12 text-center">
+                    <div class="col-12 text-center iconName">
                         {{skill.name}}
                     </div>
                 </div>
@@ -34,7 +34,7 @@
             <div class="row justify-content-center">
                 <div *ngFor="let skill of prodFlow; index as i">
                     <img src={{skill.path}} alt="{{skill.name}} icon" class="icons" />
-                    <div class="col-12 text-center">
+                    <div class="col-12 text-center iconName">
                         {{skill.name}}
                     </div>
                 </div>

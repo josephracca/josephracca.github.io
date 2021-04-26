@@ -14,16 +14,20 @@ export class GalleryComponent implements OnInit {
   // white="black"
 
   projectList: IProject[] = [];
+  filterOn: boolean = false;
 
   constructor(private projectService: ProjectsServiceService) { }
 
   ngOnInit(): void {
     this.projectList = this.projectService.sendList();
+    this.filterOn = false;
+
   }
 
   filterProjects(value: string) {
     this.ngOnInit();
-    this.projectList =  this.projectList.filter(e => e.tags.includes(value))
+    this.projectList = this.projectList.filter(e => e.tags.includes(value))
+    this.filterOn = !this.filterOn;
   }
 
   

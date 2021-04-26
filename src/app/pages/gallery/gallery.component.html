@@ -1,16 +1,23 @@
 <div class="container-fluid mx-0 px-0 my-5 p-5" style="background-color: rgb(34, 34, 34);">
-    <h3>MY WORK
-        <span class="hashtag hashtagLg" (click)="filterProjects('process')">#process</span>
-        <span class="hashtag hashtagLg" (click)="filterProjects('csharp')">#csharp</span>
-        <span class="hashtag hashtagLg" (click)="filterProjects('javascript')">#javascript</span>
-        <span class="hashtag hashtagLg" (click)="filterProjects('angular')">#angular</span>
-        <span class="hashtag hashtagLg" (click)="filterProjects('design')">#design</span>
-        <span class="hashtag hashtagLg" (click)="filterProjects('react')">#react</span>
-        <span class="hashtag hashtagLg" (click)="filterProjects('css')">#css</span>
-        <span class="hashtag hashtagLg" (click)="filterProjects('html')">#html</span>
-        <span class="hashtag hashtagLg" (click)="ngOnInit()">Clear Filters</span>
+    <h3>
+        MY WORK
     </h3>
     <hr>
+    <div class="row px-0 mx-0 py-4">
+        <h5>
+            filter by: 
+            <span *ngIf="filterOn" class="hashtag hashtagLg" (click)="ngOnInit()">× Clear Filters</span>
+            <span class="hashtag hashtagLg" (click)="filterProjects('process')">#process</span>
+            <span class="hashtag hashtagLg" (click)="filterProjects('csharp')">#csharp</span>
+            <span class="hashtag hashtagLg" (click)="filterProjects('javascript')">#javascript</span>
+            <span class="hashtag hashtagLg" (click)="filterProjects('angular')">#angular</span>
+            <span class="hashtag hashtagLg" (click)="filterProjects('design')">#design</span>
+            <span class="hashtag hashtagLg" (click)="filterProjects('react')">#react</span>
+            <span class="hashtag hashtagLg" (click)="filterProjects('css')">#css</span>
+            <span class="hashtag hashtagLg" (click)="filterProjects('html')">#html</span>
+        </h5>
+    </div>
+
     <div class="row d-flex justify-content-center px-0 mx-0">
         <div id="hoverProject" *ngFor="let project of projectList, index as i">
 
@@ -30,7 +37,7 @@
             </div>
 
             <div id="second" class="projectBoxBack col fadeIn"
-                style="color: white; background-color: {{project.color}}">
+                >
                 <div class="row">
                     <div class="col-12">
                         <h5>{{project.name}}</h5>
