@@ -12,6 +12,7 @@ import { GalleryComponent } from './pages/gallery/gallery.component';
 import { SkillsetComponent } from './pages/skillset/skillset.component';
 import { TerminalComponent } from './pages/terminal/terminal.component';
 import { FooterComponent } from './pages/footer/footer.component';
+import { FeaturedComponent } from './components/featured/featured.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FooterComponent } from './pages/footer/footer.component';
     GalleryComponent,
     SkillsetComponent,
     TerminalComponent,
-    FooterComponent
+    FooterComponent,
+    FeaturedComponent
   ],
   imports: [
     BrowserModule,

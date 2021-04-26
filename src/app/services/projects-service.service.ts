@@ -15,7 +15,7 @@ export class ProjectsServiceService {
       color: "#334956",
       logo: "./../../../assets/images/proj_logos/EightAnd.png",
       desc: "A fullstack application, currently in development with A. Ato., K. Martinez, and C. Gonzalez.",
-      tags: ["fullstack", "xd", "ionic", "angular", "csharp", "frontend", "backend"],
+      tags: ["fullstack", "xd", "ionic", "angular", "csharp", "frontend", "backend", "typescript"],
       repoUrl: "",
       liveUrl: ""
     },
@@ -95,7 +95,7 @@ export class ProjectsServiceService {
       color: "#2EC4EA",
       logo: "./../../../assets/images/proj_logos/RPSLS.svg",
       desc: "Rock, paper, Scissors, Lizard, Spock. You choose the options!",
-      tags: ["html", "css", "js", "xd", "ui", "APIcall"],
+      tags: ["html", "css", "javascript", "xd", "ui", "APIcall"],
       repoUrl: "https://github.com/josephracca/RPSLS",
       liveUrl: "http://josephracca.azurewebsites.net/RaccaPSLS/"
     },
@@ -155,7 +155,7 @@ export class ProjectsServiceService {
       color: "#9B3C9F",
       logo: "./../../../assets/images/proj_logos/random.svg",
       desc: "A random name generator that also manipulates the DOM with each random name!",
-      tags: ["basics", "DOM", "html", "css", "js"],
+      tags: ["basics", "DOM", "html", "css", "javascript"],
       repoUrl: "https://github.com/josephracca/MC11_RNGv2",
       liveUrl: "http://josephraccainit.azurewebsites.net/RNGv2/"
     },

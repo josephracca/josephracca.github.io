@@ -21,11 +21,15 @@ export class SkillsetComponent implements OnInit {
       path: "./../../../assets/images/Icons/dev_javascript.svg"
     },
     {
+      name: "TypeScript",
+      path: "./../../../assets/images/Icons/dev_typescript.svg"
+    },
+    {
       name: "React",
       path: "./../../../assets/images/Icons/dev_react.svg"
     },
     {
-      name: "Angular",
+      name: "Angular 11+",
       path: "./../../../assets/images/Icons/dev_angular.svg"
     },
     {
@@ -39,6 +43,10 @@ export class SkillsetComponent implements OnInit {
     {
       name: "Bootstrap",
       path: "./../../../assets/images/Icons/dev_bootstrap.svg"
+    },
+    {
+      name: "Ionic",
+      path: "./../../../assets/images/Icons/dev_ionic.svg"
     },
 
   ]
@@ -111,6 +119,10 @@ export class SkillsetComponent implements OnInit {
     {
       name: "Notability",
       path: "./../../../assets/images/Icons/prod_not.svg"
+    },
+    {
+      name: "Azure",
+      path: "./../../../assets/images/Icons/prod_azure.svg"
     },
 
   ]
