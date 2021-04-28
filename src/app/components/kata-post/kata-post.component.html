@@ -1,0 +1,374 @@
+<div class="container-fluid p-0 m-0" style="height: 100%">
+    <app-sidenav></app-sidenav>
+
+
+
+    <div style="margin-left: 75px">
+        <div class="container-fluid" class="p-0 m-0">
+            <img style="width:100%" class="top-image" src="./../../../assets/images/photos/kata.JPG" />
+        </div>
+
+        <div class="container p-5 helvetica">
+
+            <header>
+                <h1 class="page-title">Navigating a 4KYU Kata on Codewars</h1>
+            </header>
+            <div class="page-body">
+                <!-- <ol id="ad922b32-576d-4643-ae8f-96a06cf2065e" class="numbered-list" start="1">
+                <li>Codewars 4KYU on Permutations, feature sketches from Notability<ul id="0dc7c05a-4e12-40fa-aa84-067da5f581d4"
+                        class="bulleted-list">
+                        <li>feature article on permutations to show research phase</li>
+                    </ul>
+                    <ul id="e0cbb66f-d790-4153-a775-cf89e42c2147" class="bulleted-list">
+                        <li>discuss the need to optimize the solution to handle larger strings</li>
+                    </ul>
+                </li>
+            </ol> -->
+                <!-- <ul id="84d94944-5c9a-4c6d-a2f4-953099001435" class="bulleted-list">
+                <li>Tagged with: #javascript #patternrecognition #optimization #whiteboard</li>
+            </ul> -->
+                <p>APRIL 27, 2020</p>
+                <h3 id="116d8a71-8dc8-425f-a3a7-99d2ba7d9533" class="">Hello World!</h3>
+                <hr id="5991f302-1871-41e2-a1d2-7b789bdffa52" />
+                <p id="f4fa5960-6cd7-49b8-b0ae-8480839898b4" class="">Welcome! I&#x27;m glad you&#x27;ve decided to dive
+                    a
+                    little deeper with me in this process. Before we start, if you want to skip ahead to the more
+                    technical
+                    part of this, scroll on down to the bottom to the solution. However, if you really want to
+                    understand my
+                    process in breaking down this problem, continuing from here is what you oughta do. So let&#x27;s
+                    dive
+                    in! Here&#x27;s the kata straight from codewars.com. <strong>Simple Fun #159: Middle
+                        Permutation</strong>
+                </p>
+                <figure id="af893d00-0366-416e-80f8-d40df72b1d3e" class="image"><a
+                        href="./../../../assets/images/kataimages/Screen_Shot_2021-04-26_at_11.53.49_PM.png"><img
+                            style="width:75%"
+                            src="./../../../assets/images/kataimages/Screen_Shot_2021-04-26_at_11.53.49_PM.png" /></a>
+                    <figcaption>Figure 0: The task at hand: <a
+                            href="https://www.codewars.com/kata/58ad317d1541651a740000c5">https://www.codewars.com/kata/58ad317d1541651a740000c5</a>
+                    </figcaption>
+                </figure>
+                <p id="18ca0962-e72f-40eb-b754-9e05cb6ab954" class="">
+
+                </p>
+                <p id="496bd329-2626-4e4e-9d9b-013cde92cf48" class="">The task seemed approachable. I had been on a
+                    streak
+                    of solving a few 6 and 5 KYU katas so i thought why not just try out a 4KYU? The task was
+                    <del>simple</del> straight-forward: find string at the middle index of an array of permutations
+                    given a
+                    string, with all unique characters. Account for an array whose count was even. Return that string.
+
+                </p>
+                <p id="e19a984d-dd95-4a4b-a468-bbbeaff50fdc" class="">
+
+                </p>
+                <p id="9192e23e-5225-4860-b942-7e52c8d9dd58" class="">Having just a basic understanding of permutations,
+                    I
+                    wanted to do a little research. There&#x27;s a great article here: <a
+                        href="https://levelup.gitconnected.com/find-all-permutations-of-a-string-in-javascript-af41bfe072d2">https://levelup.gitconnected.com/find-all-permutations-of-a-string-in-javascript-af41bfe072d2</a>
+                    that gives a rundown of how to do exactly that. It was a great resource but when it came time to run
+                    the
+                    test, it exceeded the time limit, so in other words, the solution failed.
+                </p>
+                <h3 id="5d53d6ed-3cf7-4788-9a63-3eb9e38da985" class="">When code doesn&#x27;t quite cut it, to the
+                    drawing
+                    board!</h3>
+                <hr id="7a8202ee-8f44-4dbe-bc22-91147b92a9f5" />
+                <figure id="37b6e08a-9821-43dd-9340-6d3cf0d8b16a" class="image"><a
+                        href="./../../../assets/images/kataimages/Screen_Shot_2021-04-27_at_12.10.33_AM.png"><img
+                            style="width:50%"
+                            src="./../../../assets/images/kataimages/Screen_Shot_2021-04-27_at_12.10.33_AM.png" /></a>
+                    <figcaption>Figure 1: The first attempt at trying to understand what was going on visually.
+                    </figcaption>
+                </figure>
+                <p id="61828e61-d357-4eed-bb96-8544c8fec256" class="">So what was I to do next? I had to figure out how
+                    to
+                    optimize the code. I didn&#x27;t know the first place to start, nor did I know much about
+                    optimization.
+                    I figured there must be something, a more fundamental and simpler way to solve this. I took to the
+                    drawing board and started rearranging the string to see how it correlates to the &quot;middle
+                    permutation&quot;.
+                </p>
+                <p id="35bfa6cc-7b88-495f-b811-c8095b426226" class="">It was a good first step that got me going in the
+                    right direction. I wanted to see how the original string compared to the correct <em>middle
+                        permutation</em>, but it was still unclear to me what the correlation was. So I decided to go a
+                    bit
+                    further and see how the indices changed from the original string to the correct permutation.
+                </p>
+                <h3 id="dd446a13-ef26-44fc-8396-b636a95d345c" class="">What the heck is a permutation?</h3>
+                <hr id="3073a152-d258-4222-b685-45619731d262" />
+                <p id="fddb29a9-f70c-4f7b-8e2f-3710796989c4" class="">I should talk a bit about what a permutation is.
+                    So
+                    from my understanding, a permutation is any combination or rearrangement of characters in a string.
+                    In
+                    this case, the possible number of permutations is calculated by taking the total count of
+                    characters, or
+                    string length, and running a factorial on it. So for a string of length 6, the number of possibly
+                    combinations, would be 6! = 6 × 5 × 4 × 3 × 2 x 1, which is the equivalent of 720. 720 total
+                    combinations. This is calculated as follows: the first letter could be any one of the
+                    <strong>six</strong> letters in the string, then once one letter is used, that leaves 5, then 4 and
+                    so
+                    on, until you have no more letters to use in the combination.
+
+                </p>
+                <p id="27e3e24f-883e-4f04-8bc7-0beff0192225" class="">
+
+                </p>
+                <p id="96d7e98f-185e-4d1e-ad84-0fe129a09e4b" class="">Now that we have that out of the way, let&#x27;s
+                    move
+                    on! (Again, we don&#x27;t have to worry about duplicate permutations here because all characters are
+                    unique; IE, in &quot;aba&quot;, &quot;aba&quot; === &quot;aba&quot; (see below), which would
+                    essentially
+                    change the way we calculate the number of total <strong><em>unique
+                            permutations</em></strong><em>.)</em>
+
+                </p>
+                <pre id="6b3b49f0-bbe7-4fe0-9f04-8d7b3553bf35" class="code">
+        			<code>
+        			(string[0])+(string[1])+(string[2]) === (string[2])+(string[1])+(string[0])
+        
+        				</code>
+        			</pre>
+                <figure id="a426b672-f2fe-4231-96b6-8c6d16e6ebe7" class="image"><a
+                        href="./../../../assets/images/kataimages/Screen_Shot_2021-04-27_at_12.15.05_AM.png"><img
+                            style="width:50%"
+                            src="./../../../assets/images/kataimages/Screen_Shot_2021-04-27_at_12.15.05_AM.png" /></a>
+                    <figcaption>Figure 2: Not quite there yet in this visualization.</figcaption>
+                </figure>
+                <p id="be3eb1fd-3b2b-404d-aec0-25c23acee95c" class="">The change in index wasn&#x27;t really giving me
+                    any
+                    clues as to the pattern that was going on here so I attempted another version, but this one was no
+                    help
+                    at all.
+                </p>
+                <figure id="64b92770-ac95-422a-b359-968db664039a" class="image"><a
+                        href="./../../../assets/images/kataimages/Screen_Shot_2021-04-27_at_12.27.59_AM.png"><img
+                            style="width:50%"
+                            src="./../../../assets/images/kataimages/Screen_Shot_2021-04-27_at_12.27.59_AM.png" /></a>
+                    <figcaption>Figure 3: Not a complete waste of time: learn from your mistakes.</figcaption>
+                </figure>
+                <figure id="e3900456-e546-4653-b317-1154f4491c4c" class="image"><a
+                        href="./../../../assets/images/kataimages/Screen_Shot_2021-04-27_at_12.29.43_AM.png"><img
+                            style="width:50%"
+                            src="./../../../assets/images/kataimages/Screen_Shot_2021-04-27_at_12.29.43_AM.png" /></a>
+                    <figcaption>Figure 4: Trying to declutter by removing the color-coding and the indices, and I think
+                        this
+                        actually helped to refocus my attention on the placement/movement from the initial string to the
+                        middle permutation.</figcaption>
+                </figure>
+                <p id="0f07dd04-52da-4727-8b85-6ad155e1a8ba" class="">At this point, I decided to bring the color-coding
+                    back into the picture, but also whiteboard in a much more organized way so I could really track what
+                    was
+                    going on. I started with the shorter strings, length of 3, 4, 5 but I wanted to continue testing to
+                    make
+                    sure what was going on was consistent, so I proceeded to do all string lengths up to 10.
+                </p>
+                <div id="f6e7ebc3-1f38-471e-a10b-23762f3226c2" class="column-list">
+                    <div id="9abf8017-2c0f-43bc-8ccf-7ebf57d382df" style="width:100%" class="column">
+                        <figure id="94341691-8f58-40df-939a-5c1b2dc244fa" class="image"><a
+                                href="./../../../assets/images/kataimages/Screen_Shot_2021-04-27_at_12.36.07_AM.png"><img
+                                    style="width:100%"
+                                    src="./../../../assets/images/kataimages/Screen_Shot_2021-04-27_at_12.36.07_AM.png" /></a>
+                        </figure>
+                    </div>
+                    <div id="0f7c9eba-764e-4908-97db-01797cdcd306" style="width:100%" class="column">
+                        <figure id="adeb57b9-14ad-4d2c-b4db-6ad52548bb30" class="image"><a
+                                href="./../../../assets/images/kataimages/Screen_Shot_2021-04-27_at_12.36.18_AM.png"><img
+                                    style="width:100%"
+                                    src="./../../../assets/images/kataimages/Screen_Shot_2021-04-27_at_12.36.18_AM.png" /></a>
+                        </figure>
+                    </div>
+                </div>
+                <div id="49211557-ad49-43ad-98a2-9a56237b962a" class="column-list">
+                    <div id="a03b6869-5beb-426b-b5bc-3cb3b9f9334a" style="width:100%" class="column">
+                        <figure id="5bbc5b80-a5eb-49cc-a438-49c9859516e4" class="image"><a
+                                href="./../../../assets/images/kataimages/Screen_Shot_2021-04-27_at_12.36.36_AM.png"><img
+                                    style="width:100%"
+                                    src="./../../../assets/images/kataimages/Screen_Shot_2021-04-27_at_12.36.36_AM.png" /></a>
+                        </figure>
+                    </div>
+                    <div id="8f9dfca2-9bcf-46bf-a953-969ea4bd9220" style="width:100%" class="column">
+                        <figure id="cedcbce0-10f9-4505-a5cc-c7cdc68b3db1" class="image"><a
+                                href="./../../../assets/images/kataimages/Screen_Shot_2021-04-27_at_12.36.46_AM.png"><img
+                                    style="width:100%"
+                                    src="./../../../assets/images/kataimages/Screen_Shot_2021-04-27_at_12.36.46_AM.png" /></a>
+                            <figcaption>Figures 5-8: Making sure the pattern is really a pattern and finding the
+                                differences
+                                between odd and even string lengths.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <p id="4e70e952-f7e3-42eb-a3c9-5cfe65b4c77c" class="">At this point, it was becoming very clear to me
+                    what
+                    was going on. The pattern was starting to make sense, but I had to check to see if there was a
+                    difference between the strings with an even length and those with an odd length, and based on the
+                    sketches, there was a difference. Even-length strings had one middle character that separated the
+                    front
+                    half of the original string from the back half, whereas odd-length strings had two (with the
+                    exception
+                    of string length of 3, figure 5).
+                </p>
+                <p id="071f3a33-b66b-4461-bf6e-edc335def487" class="">
+
+                </p>
+                <p id="3ded3970-26ee-4d54-b0c3-de9800143d91" class="">It had also become apparent that the string was
+                    being
+                    divided into three parts to get to the final result: a &quot;front&quot;, &quot;middle&quot;, and
+                    &quot;back&quot;. In the middle permutation, the order would become MBF, with each of those segments
+                    being filled in reverse order. (See example of 10-length string, figure 8)</p>
+                <div class="indented">
+                    <p id="c6b6ec07-25a8-4de9-a0ae-d7ca3a528a32" class="">The middle permutation for
+                        &quot;<strong>abcd</strong><strong><em>e</em></strong><em>fghij</em>&quot; is
+                        &quot;<strong>e</strong><em>jihgf</em><strong>dcba</strong>&quot;.
+                    </p>
+                    <p id="1980f5ce-5eb7-4c38-a96d-27dba41c2ec6" class="">Spaced for clearer visualization: &quot;
+                        <strong>abcd </strong><strong><em>e </em></strong><em>fghij </em>&quot; becomes &quot;<strong>e
+                        </strong><em>jihgf </em><strong>dcba</strong>&quot;.
+
+                    </p>
+                    <p id="b131f056-1ae7-4437-a540-9b125c806961" class="">So breaking it down a bit further,
+                        <strong>abcd</strong> gets reversed, then takes the last position, <strong>e</strong> remains a
+                        single char, and takes the front/first position, and <strong>fghij </strong>gets reversed and
+                        takes
+                        the middle position.
+
+                    </p>
+                </div>
+
+
+                <p id="07970313-f6ba-4f0f-8e5f-6a7b619b494e" class="">
+
+                </p>
+                <p id="651be86d-3484-4930-ab97-94647f06e257" class="">So this is all great in layperson terms, but what
+                    does
+                    this look like in code? Well here it is in javascript. I&#x27;ll break it down a bit further with
+                    some
+                    classic comments.
+                </p>
+                <h3 id="655372cc-9911-49c9-813c-c67987b54e43" class=""><strong>The Solution:</strong></h3>
+                <hr id="70ae0ccf-9e06-4d2e-a868-24e8127fc6f1" />
+<pre id="e1ae958f-45fa-41e4-848a-7c9d65ad97ee" class="code code-wrap"><code>function middlePermutation(s) &#123;
+  let start, mid, end, midway = &quot;&quot;;
+
+  let revArr = s.split(&quot;&quot;).sort().reverse();
+  
+  let halfE = s.length/2;
+  let floorHalf = Math.floor(halfE);
+  let stopper = (s.length%2 !== 0 ) ? floorHalf+2 : halfE+1;
+  let midStart = (s.length%2 !== 0 ) ? floorHalf : halfE;
+  
+  start = revArr.slice(midStart, stopper).join(&quot;&quot;);
+  mid = revArr.slice(0, midStart).join(&quot;&quot;);
+  end = revArr.slice(stopper, s.length).join(&quot;&quot;);
+  
+  midway = start + mid + end;
+
+  return midway;
+&#125;</code></pre>
+                <h3 id="d6dc3c15-9f9e-4313-bc9b-41bf4b3080cd" class="">Breaking down the solution:</h3>
+                <hr id="4ac1ec77-2026-4744-af20-0e92311ee726" />
+                <pre id="803df485-64d6-48bf-b011-d3f0fc8ba08f" class="code code-wrap"><code>// function declaration, middlePermutations is our function name and it accepts one argument through its parameter &quot;s&quot;
+
+function middlePermutation(s) &#123;
+
+//declare some variables to store our temp arrays/strings we create from our original string
+// start = the front end of our string
+// mid = the middle char or pair of chars that act as our splitter
+// end = the back end of our string
+// midway = our awesome middle permutation
+// I initialize all of these to empty strings
+
+  let start, mid, end, midway = &quot;&quot;;
+
+// revArr is a variable that holds our temporary array, which is splitting our string, sorting it alphabetically, then reversing it, resulting in array of chars, in reverse alphabetical order
+
+  let revArr = s.split(&quot;&quot;).sort().reverse();
+  
+//now we need to determine how to handle the string based on the length, ie odd or even
+
+// halfE gives us the length divided in half but we need to floor it in case we have a decimal (from our odd strings), these variables will determine our starting points and stopping points for our start, mid, and end.
+
+  let halfE = s.length/2;
+  let floorHalf = Math.floor(halfE);
+
+//checks odd or even and provides the correct stopper and midStart point
+
+  let stopper = (s.length%2 !== 0 ) ? floorHalf+2 : halfE+1;
+  let midStart = (s.length%2 !== 0 ) ? floorHalf : halfE;
+
+//once those are claculated, we can use those numbers in our slice method on the reversed array, then rejoin those arrays back into strings
+  
+  start = revArr.slice(midStart, stopper).join(&quot;&quot;);
+  mid = revArr.slice(0, midStart).join(&quot;&quot;);
+  end = revArr.slice(stopper, s.length).join(&quot;&quot;);
+
+//finally we rebuild our string by concatenating these resulting strings
+  
+  midway = start + mid + end;
+
+//then we can return this resulting string
+
+  return midway;
+&#125;</code></pre>
+                <p id="c03ad9cb-7850-4abf-aafc-6048b9b1bab2" class="">
+
+                </p>
+                <h3 id="37af7d31-662f-47f4-a077-1eddab369061" class="">The End is Near, but it&#x27;s Not Just About The
+                    End
+                </h3>
+                <hr id="0ea1e240-68e6-49f7-a798-438169862a11" />
+                <p id="7f5ce21c-cd59-4ce8-b40e-904967ccae3c" class="">And voila! We have the middle permutation based on
+                    the
+                    instructions set out for us in our Codewar task, where we take into account the differences when a
+                    string length is odd or even. It was quite the process, but that&#x27;s exactly what does it for me:
+                    the
+                    process in getting to the final solution, or the final product makes it all worth it. This feat
+                    reinforced in me why I love to code and program: thinking outside of the box, looking for patterns,
+                    reworking solutions when they don&#x27;t work, and finding new solutions.
+                </p>
+                <p id="3e1caeeb-653d-40e8-b631-7ff08ce56ca6" class="">I hope you&#x27;ve enjoyed going on this journey
+                    with
+                    me! Until the next one!
+                </p>
+                <p id="d466f2b6-dd62-457c-82d8-c27dcaa6da37" class="">
+
+                </p>
+                <p id="e89c29e1-575f-4496-bccb-8bb5543a403b" class=""><em>-Joseph Racca</em>
+                </p>
+                <p id="e60c8413-7744-4f33-b961-b1c7a16c930e" class="">
+
+                </p>
+                <h3 id="838de2a7-3fb2-41a2-9040-b7335ed28051" class="">P.S., There&#x27;s always room for growth.</h3>
+                <hr id="d2154824-7777-47f9-9ec0-1305f3c08e5d" />
+                <p id="4b4757b9-9d61-4958-8f43-eca15c1ab46a" class=""><strong>Just a few notes for things that I can
+                        improve
+                        on:</strong> I probably could utilize a splice once I&#x27;ve split the original string into an
+                    array, reverse each spliced array and then concatenate those mutated arrays, and rejoin them into a
+                    single string. Will come back to this some day but for now, this is how I got to this solution and
+                    I&#x27;m proud of myself for solving this one.
+                </p>
+                <p id="c731c6f7-f514-45d6-98ee-d8f5917c9f5e" class="">
+
+                </p>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col">
+                    <button class="btn btn-warning" routerLink="">RETURN TO MAIN</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div style="margin-left: 75px">
+        <app-featured></app-featured>
+        <app-footer></app-footer>
+
+    </div>
+
+
+</div>

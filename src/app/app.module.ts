@@ -13,6 +13,7 @@ import { SkillsetComponent } from './pages/skillset/skillset.component';
 import { TerminalComponent } from './pages/terminal/terminal.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { FeaturedComponent } from './components/featured/featured.component';
+import { KataPostComponent } from './components/kata-post/kata-post.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FeaturedComponent } from './components/featured/featured.component';
     SkillsetComponent,
     TerminalComponent,
     FooterComponent,
-    FeaturedComponent
+    FeaturedComponent,
+    KataPostComponent
   ],
   imports: [
     BrowserModule,
