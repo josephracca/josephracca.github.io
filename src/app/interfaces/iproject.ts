@@ -6,5 +6,10 @@ export interface IProject {
     desc: string,
     tags: string[],
     repoUrl: string,
-    liveUrl: string
+    liveUrl: string,
+    xdUrl: string,
+    screenshot1: string,
+    screenshot2: string,
+    screenshot3: string,
+    expandedDescription: string
 }

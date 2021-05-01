@@ -8,26 +8,38 @@ export class ProjectsServiceService {
 
   constructor() { }
 
+  private currentProj: number = 0;
+
   private projectList: IProject[] = [
     {
       name: "EightAnd",
       text: "#FFFFFF",
       color: "#334956",
       logo: "./../../../assets/images/proj_logos/EightAnd.png",
-      desc: "A fullstack application, currently in development with A. Ato., K. Martinez, and C. Gonzalez.",
-      tags: ["fullstack", "xd", "ionic", "angular", "csharp", "frontend", "backend", "typescript"],
+      desc: "A fullstack application, currently in development with Beautifully Brutal: Alex Ato., Ken Martinez, and Carlos Gonzalez.",
+      tags: ["fullstack", "adobexd", "ionic", "angular", "csharp", "frontend", "backend", "typescript", "wireframe", "ui/ux", "design", "collaboration"],
       repoUrl: "",
-      liveUrl: ""
+      liveUrl: "",
+      xdUrl: "https://xd.adobe.com/view/83ba4eb2-bdcd-4ce3-af87-1f00d3808171-d6e9/screen/a24a5f43-8c1a-498f-bdb7-e450210388e8/",
+      screenshot1: "./../../../assets/images/projectScreenShots/eightAnd_ss1.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/.png",
+      expandedDescription: "Originally ideated in November of 2020, EightAnd is a project that I pitched to a panel of judges. Out of 22 student pitches, my project was one of eight projects selected to be developed as a fullstack application. What did "
     },
     {
-      name: "Health Force Partners Internship",
+      name: "HealthForce Partners Internship",
       text: "black",
       color: "#0F6480",
       logo: "./../../../assets/images/proj_logos/HFP.svg",
       desc: "Responsible for redesigning the organization's website to be later built using Velo by Wix. Co-designed with A. Chansy and developed with T. Womack, J. Morales, and K. Martinez,",
       tags: ["theinternship", "UI/UX", "design", "frontend", "redevelopment"],
       repoUrl: "",
-      liveUrl: ""
+      liveUrl: "",
+      xdUrl: "https://xd.adobe.com/view/68470547-6382-4749-bf88-0176a424e60a-3d14/?fullscreen&hints=off",
+      screenshot1: "./../../../assets/images/projectScreenShots/hfp_ss1.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/hfp_ss1.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/hfp_ss1.png",
+      expandedDescription: ""
     },
     {
       name: "Tokay Press",
@@ -37,7 +49,12 @@ export class ProjectsServiceService {
       desc: "Project to redevelop a local business' website, turned real business solution. Collab with M. Mendoza.",
       tags: ["html", "css", "javascript"],
       repoUrl: "https://josephracca.github.io/josephracca.github.io/",
-      liveUrl: "https://www.tokaypress.com/"
+      liveUrl: "https://www.tokaypress.com/",
+      xdUrl: "",
+      screenshot1: "./../../../assets/images/projectScreenShots/tp_ss1.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/tp_ss1.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/tp_ss1.png",
+      expandedDescription: ""
     },
     {
       name: "DoND: Rupaul Edition",
@@ -47,7 +64,12 @@ export class ProjectsServiceService {
       desc: "Deal or No Deal?! but sick'ning. Built in Unity, assets borrowed from multiple artists and sources online. Check back soon! I'm working on getting that built as a webGL on Unity.",
       tags: ["csharp", "unity", "process", "beta"],
       repoUrl: "",
-      liveUrl: ""
+      liveUrl: "",
+      xdUrl: "",
+      screenshot1: "./../../../assets/images/projectScreenShots/dond_ss1.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/dond_ss1.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/dond_ss1.png",
+      expandedDescription: ""
     },
     {
       name: "All For One",
@@ -57,7 +79,12 @@ export class ProjectsServiceService {
       desc: "Originally built in Unity with C#, task was to recreate it in React. Check out the mini challenges and have fun!",
       tags: ["react", "html", "css", "re-do", "csharp"],
       repoUrl: "https://github.com/josephracca/a41",
-      liveUrl: "http://josephracca.azurewebsites.net/a41/"
+      liveUrl: "http://josephracca.azurewebsites.net/a41/",
+      xdUrl: "",
+      screenshot1: "./../../../assets/images/projectScreenShots/a41_ss1.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/a41_ss1.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/a41_ss1.png",
+      expandedDescription: ""
     },
     {
       name: "calculatoJr",
@@ -67,7 +94,12 @@ export class ProjectsServiceService {
       desc: "A simple calculator app that allowed me to learn and use React.",
       tags: ["html", "css", "react", "javascript"],
       repoUrl: "https://github.com/josephracca/calculator",
-      liveUrl: "http://josephracca.azurewebsites.net/calculatoJr/"
+      liveUrl: "http://josephracca.azurewebsites.net/calculatoJr/",
+      xdUrl: "",
+      screenshot1: "./../../../assets/images/projectScreenShots/calc_ss1.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/calc_ss1.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/calc_ss1.png",
+      expandedDescription: ""
     },
     {
       name: "Weather.Gogh",
@@ -77,7 +109,12 @@ export class ProjectsServiceService {
       desc: "A weather application, originally designed and prototyped by H. Mejia, then developed by yours truly. Pulled data from OpenWeatherMap Weather API.",
       tags: ["switchedAtCode", "collab", "APIcall", "Xd"],
       repoUrl: "https://github.com/josephracca/fyreWeather",
-      liveUrl: "http://josephracca.azurewebsites.net/weather.gogh2/"
+      liveUrl: "http://josephracca.azurewebsites.net/weather.gogh2/",
+      xdUrl: "",
+      screenshot1: "./../../../assets/images/projectScreenShots/fyre_ss1.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/fyre_ss1.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/fyre_ss1.png",
+      expandedDescription: ""
     },
     {
       name: "flash.commit",
@@ -87,7 +124,12 @@ export class ProjectsServiceService {
       desc: "A flashcard app that promotes learning code, and pulls data from a google sheet.",
       tags: ["pitch", "teamwork", "angular", "typescript"],
       repoUrl: "https://github.com/josephracca/flashCommit",
-      liveUrl: "http://josephracca.azurewebsites.net/flash.commit/"
+      liveUrl: "http://josephracca.azurewebsites.net/flash.commit/",
+      xdUrl: "",
+      screenshot1: "./../../../assets/images/projectScreenShots/flash_ss1.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/flash_ss1.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/flash_ss1.png",
+      expandedDescription: ""
     },
     {
       name: "RPSLS",
@@ -97,7 +139,12 @@ export class ProjectsServiceService {
       desc: "Rock, paper, Scissors, Lizard, Spock. You choose the options!",
       tags: ["html", "css", "javascript", "xd", "ui", "APIcall"],
       repoUrl: "https://github.com/josephracca/RPSLS",
-      liveUrl: "http://josephracca.azurewebsites.net/RaccaPSLS/"
+      liveUrl: "http://josephracca.azurewebsites.net/RaccaPSLS/",
+      xdUrl: "",
+      screenshot1: "./../../../assets/images/projectScreenShots/rpsls_ss3.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/rpsls_ss1.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/rpsls_ss3.png",
+      expandedDescription: ""
     },
     {
       name: "Top 10",
@@ -107,7 +154,12 @@ export class ProjectsServiceService {
       desc: "A collab with A Chansy, where we feature our top animes and video games.",
       tags: ["html", "css", "bootstrap", "collab"],
       repoUrl: "",
-      liveUrl: "http://josephraccainit.azurewebsites.net/TopFaves/"
+      liveUrl: "http://josephraccainit.azurewebsites.net/TopFaves/",
+      xdUrl: "",
+      screenshot1: "./../../../assets/images/projectScreenShots/fave_ss1.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/fave_ss2.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/fave_ss3.png",
+      expandedDescription: ""
     },
     {
       name: "R&OM",
@@ -117,7 +169,12 @@ export class ProjectsServiceService {
       desc: "An app that allows you to add/remove names from a list, randomize a name from said list, or generate groups based on size or number of groups desired.",
       tags: ["html", "css", "javascript", "ui"],
       repoUrl: "https://github.com/josephracca/randomGroupsApp",
-      liveUrl: "http://josephracca.azurewebsites.net/randOM/"
+      liveUrl: "http://josephracca.azurewebsites.net/randOM/",
+      xdUrl: "",
+      screenshot1: "./../../../assets/images/projectScreenShots/group_ss1.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/group_ss1.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/group_ss1.png",
+      expandedDescription: ""
     },
     {
       name: "UpVote",
@@ -127,7 +184,12 @@ export class ProjectsServiceService {
       desc: "Recreating the up vote feature of the Web Unleashed 2020 virtual conference",
       tags: ["html", "css", "javascript"],
       repoUrl: "https://github.com/josephracca/MC_13_UpVote",
-      liveUrl: "http://josephracca.azurewebsites.net/upvote/"
+      liveUrl: "http://josephracca.azurewebsites.net/upvote/",
+      xdUrl: "",
+      screenshot1: "./../../../assets/images/projectScreenShots/upvote_ss1.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/upvote_ss1.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/upvote_ss1.png",
+      expandedDescription: ""
     },
     {
       name: "Muzzles",
@@ -137,7 +199,12 @@ export class ProjectsServiceService {
       desc: "Our first, multi-person project, first time using GitHub repos to collaborate with other devs.",
       tags: ["fundamentals", "teamwork", "github", "merge"],
       repoUrl: "https://github.com/josephracca/puppy-restaurant",
-      liveUrl: "http://josephracca.azurewebsites.net/puppy-restaurant/"
+      liveUrl: "http://josephracca.azurewebsites.net/puppy-restaurant/",
+      xdUrl: "",
+      screenshot1: "./../../../assets/images/projectScreenShots/puppy_ss1.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/puppy_ss2.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/puppy_ss3.png",
+      expandedDescription: ""
     },
     {
       name: "Le Petite Maison",
@@ -147,7 +214,12 @@ export class ProjectsServiceService {
       desc: "A fun school assignment to get used to working with Bootstrap. Book now!",
       tags: ["fundamentals", "html", "css", "bootstrap"],
       repoUrl: "https://github.com/josephracca/HamsterHotel",
-      liveUrl: "http://josephraccainit.azurewebsites.net/HamsterHotel/"
+      liveUrl: "http://josephraccainit.azurewebsites.net/HamsterHotel/",
+      xdUrl: "",
+      screenshot1: "./../../../assets/images/projectScreenShots/hamster_ss1.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/hamster_ss2.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/hamster_ss3.png",
+      expandedDescription: ""
     },
     {
       name: "Random Name Generator Version 1",
@@ -157,7 +229,12 @@ export class ProjectsServiceService {
       desc: "A random name generator that also manipulates the DOM with each random name!",
       tags: ["basics", "DOM", "html", "css", "javascript"],
       repoUrl: "https://github.com/josephracca/MC11_RNGv2",
-      liveUrl: "http://josephraccainit.azurewebsites.net/RNGv2/"
+      liveUrl: "http://josephraccainit.azurewebsites.net/RNGv2/",
+      xdUrl: "",
+      screenshot1: "./../../../assets/images/projectScreenShots/random_ss1.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/random_ss2.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/random_ss3.png",
+      expandedDescription: ""
     },
     {
       name: "DOM Manipulations",
@@ -167,7 +244,12 @@ export class ProjectsServiceService {
       desc: "A project to teach us how to get comfortable manipulating the DOM.",
       tags: ["basics", "fundamentals", "html", "css", "DOM"],
       repoUrl: "https://josephracca.github.io/josephracca.github.io/",
-      liveUrl: "http://josephraccainit.azurewebsites.net/DOM/"
+      liveUrl: "http://josephraccainit.azurewebsites.net/DOM/",
+      xdUrl: "",
+      screenshot1: "./../../../assets/images/projectScreenShots/dom_ss1.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/dom_ss2.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/dom_ss3.png",
+      expandedDescription: ""
     },
     {
       name: "More!?",
@@ -177,7 +259,12 @@ export class ProjectsServiceService {
       desc: "Well if you've made it here...I love to eat, cook, dance, keep active, and love being a dad to my two pups and handful of plants!",
       tags: ["aboutMe", "notJustADev", "noAIhere", "plantLover", "dogDad"],
       repoUrl: "https://github.com/josephracca",
-      liveUrl: ""
+      liveUrl: "",
+      xdUrl: "",
+      screenshot1: "./../../../assets/images/projectScreenShots/.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/.png",
+      expandedDescription: ""
     },
     {
       name: "!null",
@@ -187,7 +274,12 @@ export class ProjectsServiceService {
       desc: "Intentionally blank, hopefully to fill in with another soon and maybe one I can work on with + for you!",
       tags: ["learn", "design", "develop", "repeat"],
       repoUrl: "",
-      liveUrl: ""
+      liveUrl: "",
+      xdUrl: "",
+      screenshot1: "./../../../assets/images/projectScreenShots/.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/.png",
+      expandedDescription: ""
     },
   ];
 
@@ -205,5 +297,13 @@ export class ProjectsServiceService {
   //function that gets called on init that sets up the list
   sendList() {
     return this.projectList;
+  }
+
+  setProject(value: number){
+    this.currentProj = value;
+  }
+
+  returnProject(){
+    return this.projectList[this.currentProj];
   }
 }

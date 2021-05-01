@@ -30,6 +30,10 @@ export class GalleryComponent implements OnInit {
     this.filterOn = !this.filterOn;
   }
 
+  doTest(value: number){
+    console.log("send to service:", value)
+    this.projectService.setProject(value);
+  }
   
 
 }

@@ -14,6 +14,7 @@ import { TerminalComponent } from './pages/terminal/terminal.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { FeaturedComponent } from './components/featured/featured.component';
 import { KataPostComponent } from './components/kata-post/kata-post.component';
+import { ProjectFocusModalComponent } from './components/project-focus-modal/project-focus-modal.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { KataPostComponent } from './components/kata-post/kata-post.component';
     TerminalComponent,
     FooterComponent,
     FeaturedComponent,
-    KataPostComponent
+    KataPostComponent,
+    ProjectFocusModalComponent
   ],
   imports: [
     BrowserModule,
