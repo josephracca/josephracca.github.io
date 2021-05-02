@@ -12,23 +12,23 @@ export class ExtensionsComponent implements OnInit {
 
   openExt: boolean = false;
 
-  constructor( private projectService: ProjectsServiceService, private sidenav: SidenavComponent) { }
+  constructor( 
+    private projectService: ProjectsServiceService, 
+    private sidenav: SidenavComponent
+    ) { }
 
   ngOnInit(): void {
     this.projectList = this.projectService.sendList();
-    this.openExt = this.projectService.extensionsClosed;
   }
 
   closeExt(){
-    // this.projectService.toggleExtensions();
-    // this.openExt = this.projectService.extensionsClosed;
-    this.sidenav.comingSoon();
+    this.sidenav.toggleExt();
   }
 
   projectList: IProject[] = [];
 
-  // get 
-
-
+  extClick(value: string): void{
+    console.log(value)
+  }
 
 }

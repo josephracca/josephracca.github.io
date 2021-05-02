@@ -8,11 +8,12 @@ export class ProjectsServiceService {
 
   constructor() { }
 
-  private currentProj: number = 0;
+  private currentProj: any;
 
   private projectList: IProject[] = [
     {
       name: "EightAnd",
+      date: "11.01.2020 - IN PROGRESS",
       text: "#FFFFFF",
       color: "#334956",
       logo: "./../../../assets/images/proj_logos/EightAnd.png",
@@ -22,12 +23,13 @@ export class ProjectsServiceService {
       liveUrl: "",
       xdUrl: "https://xd.adobe.com/view/83ba4eb2-bdcd-4ce3-af87-1f00d3808171-d6e9/screen/a24a5f43-8c1a-498f-bdb7-e450210388e8/",
       screenshot1: "./../../../assets/images/projectScreenShots/eightAnd_ss1.png",
-      screenshot2: "./../../../assets/images/projectScreenShots/.png",
-      screenshot3: "./../../../assets/images/projectScreenShots/.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/eightAnd_ss2.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/eightAnd_ss3.png",
       expandedDescription: "Originally ideated in November of 2020, EightAnd is a project that I pitched to a panel of judges. Out of 22 student pitches, my project was one of eight projects selected to be developed as a fullstack application. What did "
     },
     {
       name: "HealthForce Partners Internship",
+      date: "",
       text: "black",
       color: "#0F6480",
       logo: "./../../../assets/images/proj_logos/HFP.svg",
@@ -43,6 +45,7 @@ export class ProjectsServiceService {
     },
     {
       name: "Tokay Press",
+      date: "",
       text: "black",
       color: "#8BDDD7",
       logo: "./../../../assets/images/proj_logos/tokay.svg",
@@ -58,6 +61,7 @@ export class ProjectsServiceService {
     },
     {
       name: "DoND: Rupaul Edition",
+      date: "",
       text: "black",
       color: "#B81556",
       logo: "./../../../assets/images/proj_logos/DoND.png",
@@ -73,6 +77,7 @@ export class ProjectsServiceService {
     },
     {
       name: "All For One",
+      date: "",
       text: "black",
       color: "#F7C52D",
       logo: "./../../../assets/images/proj_logos/doggies.svg",
@@ -88,6 +93,7 @@ export class ProjectsServiceService {
     },
     {
       name: "calculatoJr",
+      date: "",
       text: "black",
       color: "#009E42",
       logo: "./../../../assets/images/proj_logos/calc.svg",
@@ -103,6 +109,7 @@ export class ProjectsServiceService {
     },
     {
       name: "Weather.Gogh",
+      date: "",
       text: "black",
       color: "#E96E51",
       logo: "./../../../assets/images/proj_logos/cloud.png",
@@ -118,11 +125,12 @@ export class ProjectsServiceService {
     },
     {
       name: "flash.commit",
+      date: "",
       text: "black",
       color: "#AED951",
       logo: "./../../../assets/images/proj_logos/flash.svg",
       desc: "A flashcard app that promotes learning code, and pulls data from a google sheet.",
-      tags: ["pitch", "teamwork", "angular", "typescript"],
+      tags: ["sprintweek", "html", "javascript", "css"],
       repoUrl: "https://github.com/josephracca/flashCommit",
       liveUrl: "http://josephracca.azurewebsites.net/flash.commit/",
       xdUrl: "",
@@ -133,6 +141,7 @@ export class ProjectsServiceService {
     },
     {
       name: "RPSLS",
+      date: "",
       text: "black",
       color: "#2EC4EA",
       logo: "./../../../assets/images/proj_logos/RPSLS.svg",
@@ -143,11 +152,12 @@ export class ProjectsServiceService {
       xdUrl: "",
       screenshot1: "./../../../assets/images/projectScreenShots/rpsls_ss3.png",
       screenshot2: "./../../../assets/images/projectScreenShots/rpsls_ss1.png",
-      screenshot3: "./../../../assets/images/projectScreenShots/rpsls_ss3.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/rpsls_ss2.png",
       expandedDescription: ""
     },
     {
       name: "Top 10",
+      date: "",
       text: "black",
       color: "#3C75AD",
       logo: "./../../../assets/images/proj_logos/top10.svg",
@@ -163,6 +173,7 @@ export class ProjectsServiceService {
     },
     {
       name: "R&OM",
+      date: "",
       text: "black",
       color: "#0F2230",
       logo: "./../../../assets/images/proj_logos/R&OM.svg",
@@ -178,6 +189,7 @@ export class ProjectsServiceService {
     },
     {
       name: "UpVote",
+      date: "",
       text: "black",
       color: "#C75656",
       logo: "./../../../assets/images/proj_logos/upvote.svg",
@@ -193,6 +205,7 @@ export class ProjectsServiceService {
     },
     {
       name: "Muzzles",
+      date: "",
       text: "black",
       color: "#5F022B",
       logo: "./../../../assets/images/proj_logos/paw.png",
@@ -208,6 +221,7 @@ export class ProjectsServiceService {
     },
     {
       name: "Le Petite Maison",
+      date: "",
       text: "black",
       color: "#000324",
       logo: "./../../../assets/images/proj_logos/hamster.png",
@@ -223,6 +237,7 @@ export class ProjectsServiceService {
     },
     {
       name: "Random Name Generator Version 1",
+      date: "",
       text: "black",
       color: "#9B3C9F",
       logo: "./../../../assets/images/proj_logos/random.svg",
@@ -238,6 +253,7 @@ export class ProjectsServiceService {
     },
     {
       name: "DOM Manipulations",
+      date: "",
       text: "black",
       color: "#181818",
       logo: "./../../../assets/images/proj_logos/DOM.svg",
@@ -251,59 +267,50 @@ export class ProjectsServiceService {
       screenshot3: "./../../../assets/images/projectScreenShots/dom_ss3.png",
       expandedDescription: ""
     },
-    {
-      name: "More!?",
-      text: "black",
-      color: "#63686B",
-      logo: "./../../../assets/images/Icons/nav_jr.svg",
-      desc: "Well if you've made it here...I love to eat, cook, dance, keep active, and love being a dad to my two pups and handful of plants!",
-      tags: ["aboutMe", "notJustADev", "noAIhere", "plantLover", "dogDad"],
-      repoUrl: "https://github.com/josephracca",
-      liveUrl: "",
-      xdUrl: "",
-      screenshot1: "./../../../assets/images/projectScreenShots/.png",
-      screenshot2: "./../../../assets/images/projectScreenShots/.png",
-      screenshot3: "./../../../assets/images/projectScreenShots/.png",
-      expandedDescription: ""
-    },
-    {
-      name: "!null",
-      text: "black",
-      color: "#464646",
-      logo: "./../../../assets/images/proj_logos/ellipses.svg",
-      desc: "Intentionally blank, hopefully to fill in with another soon and maybe one I can work on with + for you!",
-      tags: ["learn", "design", "develop", "repeat"],
-      repoUrl: "",
-      liveUrl: "",
-      xdUrl: "",
-      screenshot1: "./../../../assets/images/projectScreenShots/.png",
-      screenshot2: "./../../../assets/images/projectScreenShots/.png",
-      screenshot3: "./../../../assets/images/projectScreenShots/.png",
-      expandedDescription: ""
-    },
+    // {
+    //   name: "More!?",
+    // date: "",
+    //   text: "black",
+    //   color: "#63686B",
+    //   logo: "./../../../assets/images/Icons/nav_jr.svg",
+    //   desc: "Well if you've made it here...I love to eat, cook, dance, keep active, and love being a dad to my two pups and handful of plants!",
+    //   tags: ["aboutMe", "notJustADev", "noAIhere", "plantLover", "dogDad"],
+    //   repoUrl: "https://github.com/josephracca",
+    //   liveUrl: "",
+    //   xdUrl: "",
+    //   screenshot1: "./../../../assets/images/projectScreenShots/.png",
+    //   screenshot2: "./../../../assets/images/projectScreenShots/.png",
+    //   screenshot3: "./../../../assets/images/projectScreenShots/.png",
+    //   expandedDescription: ""
+    // },
+    // {
+    //   name: "!null",
+    // date: "",
+    //   text: "black",
+    //   color: "#464646",
+    //   logo: "./../../../assets/images/proj_logos/ellipses.svg",
+    //   desc: "Intentionally blank, hopefully to fill in with another soon and maybe one I can work on with + for you!",
+    //   tags: ["learn", "design", "develop", "repeat"],
+    //   repoUrl: "",
+    //   liveUrl: "",
+    //   xdUrl: "",
+    //   screenshot1: "./../../../assets/images/projectScreenShots/.png",
+    //   screenshot2: "./../../../assets/images/projectScreenShots/.png",
+    //   screenshot3: "./../../../assets/images/projectScreenShots/.png",
+    //   expandedDescription: ""
+    // },
   ];
 
-  extensionsClosed: boolean = false;
-
-  toggleExtensions() {
-    if (this.extensionsClosed === true) {
-      this.extensionsClosed = false;
-    } else {
-      this.extensionsClosed = true;
-    }
-    return this.extensionsClosed;
-  }
-
   //function that gets called on init that sets up the list
-  sendList() {
+  sendList(): IProject[]{
     return this.projectList;
   }
 
-  setProject(value: number){
+  setProject(value: IProject){
     this.currentProj = value;
   }
 
   returnProject(){
-    return this.projectList[this.currentProj];
+    return this.currentProj;
   }
 }

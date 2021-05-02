@@ -16,14 +16,17 @@ div#hoverProject:hover div#second
         position: absolute
 
 
-.projectBox
+.projectBox, .projectBoxBack
     width: 300px
     height: 300px
+    align-items: center    
+
+.projectBox
     background-color: black
     display: flex
     justify-content: center
-    align-items: center
     transition: background-color 1s, color 1s
+    margin: 10px
 
 // .projectBox:hover
 //     background-color: white
@@ -32,14 +35,12 @@ div#hoverProject:hover div#second
 
 .projectBoxBack
     background-color: #00000090
-    width: 300px
-    height: 300px
     // display: flex
-    
     justify-content: center
-    align-items: center
     transition: background-color 1s, color 1s
     text-align: center
+    padding: 30px
+    margin: 10px
 
 .adjustLine
     line-height: 18px
@@ -58,9 +59,6 @@ div#hoverProject:hover div#second
     line-height: 25px
     font-size: 14px
     display: inline-block
-
-// .hashtag:hover
-//     background-color: #FFFFFF50
 
 .hashtagLg
     border-radius: 20px

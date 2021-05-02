@@ -9,9 +9,6 @@ import { IProject } from 'src/app/interfaces/iproject';
   styleUrls: ['./gallery.component.sass']
 })
 export class GalleryComponent implements OnInit {
-  // projects: string[] = ["EightAnd", "Tokay Press", "HFP", "Flash", "RPSLS", "Top10", "DoND", "Calculator", "R&OM", "UpVote", "A41", "Weather.Gogh", "random", "le maison", "puppy", "DOM", "___", "..."]
-
-  // white="black"
 
   projectList: IProject[] = [];
   filterOn: boolean = false;
@@ -30,10 +27,9 @@ export class GalleryComponent implements OnInit {
     this.filterOn = !this.filterOn;
   }
 
-  doTest(value: number){
-    console.log("send to service:", value)
+  sendIndex(value: IProject) {
+    // console.log("send to service:", value)
     this.projectService.setProject(value);
   }
-  
 
 }

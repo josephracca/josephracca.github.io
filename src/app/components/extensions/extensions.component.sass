@@ -1,7 +1,7 @@
 .sidenav
     height: 100%
-    min-width: 450px
-    width: 20%
+    min-width: 300px
+    width: 25%
     position: fixed
     z-index: 1
     top: 0
@@ -12,6 +12,7 @@
     padding: 40px 40px 40px 40px
     font-family: Arial, Helvetica, sans-serif
     color: #818181
+
 
 .sidenav a
     padding: 0px 0px 0px 10px
@@ -58,8 +59,13 @@
 .desc
     font-weight: 400
     font-size: .9rem
-    text-overflow: ellipsis
     margin-bottom: 0
+    overflow: hidden
+    text-overflow: ellipsis
+    display: -webkit-box
+    -webkit-line-clamp: 2
+    /* number of lines to show */
+    -webkit-box-orient: vertical
 
 .text
     white-space: wrap

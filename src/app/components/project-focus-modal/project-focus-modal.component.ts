@@ -21,14 +21,17 @@ export class ProjectFocusModalComponent implements OnInit {
   openXl(content: any) {
     this.currentProject = this.pService.returnProject();
     this.modalService.open(content, { size: 'xl' , centered: true});
-    console.log(this.pService.returnProject());
+    // console.log(this.pService.returnProject());
   }
 
   ngOnInit(): void {
   }
 
-  doTest(): void {
-    console.log("void")
-  }
+  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+
+
+  // sendIndex(): void {
+  //   console.log("void")
+  // }
 
 }

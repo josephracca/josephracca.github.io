@@ -1,5 +1,6 @@
 export interface IProject {
     name: string,
+    date: string,
     text: string,
     color: string,
     logo: string,

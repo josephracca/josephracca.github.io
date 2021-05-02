@@ -2,22 +2,29 @@
     margin: 20px
 
 .featured
-    background:#161616
-        
+    background: #161616
+
 .card
     color: white!important
     background: #1a1a1ade
     border: none
     margin-top: 25px
 
-.card-text
+p.card-text
     font-family: Arial, Helvetica, sans-serif
-    color: #7a7a7a
+    color: #a5a5a5
+    font-size: 1rem
+    overflow: hidden
+    text-overflow: ellipsis
+    display: -webkit-box
+    -webkit-line-clamp: 4
+    -webkit-box-orient: vertical
 
-.card-title
+h4.card-title
     // color: cyan
     font-weight: 400
     text-transform: uppercase
+    font-size: 1.25rem
 
 .subTitle
     font-size: 1rem
@@ -39,7 +46,13 @@ img
     object-fit: cover
     // border-radius: 10px
 
+img:hover
+    opacity: 50%
+    content: "read more"
 
 .date
     letter-spacing: .25rem
     font-size: .75rem
+
+div.card
+    width:20rem

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ProjectsServiceService } from 'src/app/services/projects-service.service';
 
 @Component({
   selector: 'app-sidenav',
@@ -10,22 +9,13 @@ export class SidenavComponent implements OnInit {
 
   openExt: boolean = false;
 
-  constructor(private projectService: ProjectsServiceService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    // this.openExt = this.projectService.toggleExtensions();
   }
 
-  comingSoon() {
-    // alert('Extensions on their way...check back soon!')
+  toggleExt() {
     this.openExt = !this.openExt;
-  }
-
-
-  closeExt() {
-    this.openExt = this.projectService.toggleExtensions();
-    console.log(this.openExt);
-
   }
 
 }

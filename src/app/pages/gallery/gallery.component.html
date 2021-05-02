@@ -19,7 +19,7 @@
     </div>
 
     <div class="row d-flex justify-content-center px-0 mx-0">
-        <div id="hoverProject" *ngFor="let project of projectList, index as i" (mouseenter)="doTest(i)">
+        <div id="hoverProject" *ngFor="let project of projectList, index as i" (mouseenter)="sendIndex(projectList[i])">
 
             <div id="first" class="projectBox" style="color: {{project.text}}; background-color: {{project.color}};">
                 <!-- {{project.name}} -->
@@ -46,25 +46,25 @@
                             {{project.desc}}
                         </p>
                     </div>
-                    <div class="col-12 my-3">
-                        <span *ngIf="project.repoUrl || project.liveUrl || project.xdUrl">Open: </span>
-                        <a href={{project.repoUrl}} target="_blank">
-                            <img *ngIf="project.repoUrl"
-                                src="./../../../assets/images/project_card/Icon awesome-github.svg" alt="gh logo" />
-                            </a>
-                        <span *ngIf="project.repoUrl && project.liveUrl"> | </span>
+                    <!-- <div class="col-12 my-3">
+                        <span *ngIf="project.repoUrl || project.liveUrl || project.xdUrl">Launch Project: </span>
                         <a href={{project.liveUrl}} target="_blank">
                             <img *ngIf="project.liveUrl"
                                 src="./../../../assets/images/project_card/Icon ionic-md-open.svg" />
+                            </a>
+                        <span *ngIf="project.repoUrl && project.liveUrl"> | </span>
+                        <a href={{project.repoUrl}} target="_blank">
+                            <img *ngIf="project.repoUrl"
+                                src="./../../../assets/images/project_card/Icon awesome-github.svg" alt="gh logo" />
                             </a>
                             <span *ngIf="project.repoUrl && project.liveUrl && project.xdUrl"> | </span>
                         <a href={{project.xdUrl}} target="_blank">
                             <img style="width: 24.618px" *ngIf="project.xdUrl"
                                 src="./../../../assets/images/project_card/cc_xd.svg" />
                             </a>
-                    </div>
+                    </div> -->
                     <div class="col-12">
-                        <app-project-focus-modal (click)="doTest(i)"></app-project-focus-modal>
+                        <app-project-focus-modal></app-project-focus-modal>
                     </div>
                 </div>
             </div>
