@@ -11,6 +11,7 @@ export class ProjectsServiceService {
   private currentProj: any;
 
   private projectList: IProject[] = [
+    //EightAnd
     {
       name: "EightAnd",
       date: "11.01.2020 - IN PROGRESS",
@@ -23,10 +24,11 @@ export class ProjectsServiceService {
       liveUrl: "",
       xdUrl: "https://xd.adobe.com/view/83ba4eb2-bdcd-4ce3-af87-1f00d3808171-d6e9/screen/a24a5f43-8c1a-498f-bdb7-e450210388e8/",
       screenshot1: "./../../../assets/images/projectScreenShots/eightAnd_ss1.png",
-      screenshot2: "./../../../assets/images/projectScreenShots/eightAnd_ss2.png",
-      screenshot3: "./../../../assets/images/projectScreenShots/eightAnd_ss3.png",
-      expandedDescription: "Originally ideated in November of 2020, EightAnd is a project that I pitched to a panel of judges. Out of 22 student pitches, my project was one of eight projects selected to be developed as a fullstack application. What did "
+      screenshot2: "./../../../assets/images/projectScreenShots/eightAnd_ss1.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/eightAnd_ss1.png",
+      expandedDescription: "Originally ideated in November of 2020, EightAnd is a project that I pitched to a panel in November of 2020. Out of 22 pitches, my project was one of eight projects selected to be developed as a fullstack application. Our current goals for the project are to take it piece by piece, with half of the team working on the frontend and the other half on the backend and as we progress through each feature, get the front and back ends connected and communicating properly to one another. EightAnd was born out of my experience in a performance group and the logistics that have been segmented into different platforms. I wanted it to cover all of those logisitcal headached: communication, scheduling, and inventory."
     },
+    //HFP
     {
       name: "HealthForce Partners Internship",
       date: "",
@@ -43,6 +45,7 @@ export class ProjectsServiceService {
       screenshot3: "./../../../assets/images/projectScreenShots/hfp_ss1.png",
       expandedDescription: ""
     },
+    // Tokay Press
     {
       name: "Tokay Press",
       date: "",
@@ -55,10 +58,11 @@ export class ProjectsServiceService {
       liveUrl: "https://www.tokaypress.com/",
       xdUrl: "",
       screenshot1: "./../../../assets/images/projectScreenShots/tp_ss1.png",
-      screenshot2: "./../../../assets/images/projectScreenShots/tp_ss1.png",
-      screenshot3: "./../../../assets/images/projectScreenShots/tp_ss1.png",
-      expandedDescription: ""
+      screenshot2: "",
+      screenshot3: "",
+      expandedDescription: "This was one of my greatest accomplishments during the early part of our time at CodeStack Academy. As an assignment, we were tasked with choosing a local business and redeveloping their website. I was so happy with the outcome, that I decided to put it in front of the business owner. She enjoyed it so much that she decided to invest in it and we ended up publishing the project. Tokay Press is a local print and design, all-in-one company."
     },
+    // DoND
     {
       name: "DoND: Rupaul Edition",
       date: "",
@@ -75,6 +79,7 @@ export class ProjectsServiceService {
       screenshot3: "./../../../assets/images/projectScreenShots/dond_ss1.png",
       expandedDescription: ""
     },
+    // A41
     {
       name: "All For One",
       date: "",
@@ -91,6 +96,8 @@ export class ProjectsServiceService {
       screenshot3: "./../../../assets/images/projectScreenShots/a41_ss1.png",
       expandedDescription: ""
     },
+
+    // calculator
     {
       name: "calculatoJr",
       date: "",
@@ -107,6 +114,8 @@ export class ProjectsServiceService {
       screenshot3: "./../../../assets/images/projectScreenShots/calc_ss1.png",
       expandedDescription: ""
     },
+
+    // weather app
     {
       name: "Weather.Gogh",
       date: "",
@@ -123,6 +132,8 @@ export class ProjectsServiceService {
       screenshot3: "./../../../assets/images/projectScreenShots/fyre_ss1.png",
       expandedDescription: ""
     },
+
+    // flashcards
     {
       name: "flash.commit",
       date: "",
@@ -139,6 +150,8 @@ export class ProjectsServiceService {
       screenshot3: "./../../../assets/images/projectScreenShots/flash_ss1.png",
       expandedDescription: ""
     },
+
+    // rpsls
     {
       name: "RPSLS",
       date: "",
@@ -155,6 +168,8 @@ export class ProjectsServiceService {
       screenshot3: "./../../../assets/images/projectScreenShots/rpsls_ss2.png",
       expandedDescription: ""
     },
+
+    // top10
     {
       name: "Top 10",
       date: "",
@@ -171,6 +186,8 @@ export class ProjectsServiceService {
       screenshot3: "./../../../assets/images/projectScreenShots/fave_ss3.png",
       expandedDescription: ""
     },
+
+    // random group gen
     {
       name: "R&OM",
       date: "",
@@ -187,6 +204,8 @@ export class ProjectsServiceService {
       screenshot3: "./../../../assets/images/projectScreenShots/group_ss1.png",
       expandedDescription: ""
     },
+
+    // upvote
     {
       name: "UpVote",
       date: "",
@@ -203,6 +222,8 @@ export class ProjectsServiceService {
       screenshot3: "./../../../assets/images/projectScreenShots/upvote_ss1.png",
       expandedDescription: ""
     },
+
+    // puppy rest
     {
       name: "Muzzles",
       date: "",
@@ -219,6 +240,8 @@ export class ProjectsServiceService {
       screenshot3: "./../../../assets/images/projectScreenShots/puppy_ss3.png",
       expandedDescription: ""
     },
+
+    // hamster hotel
     {
       name: "Le Petite Maison",
       date: "",
@@ -235,6 +258,8 @@ export class ProjectsServiceService {
       screenshot3: "./../../../assets/images/projectScreenShots/hamster_ss3.png",
       expandedDescription: ""
     },
+
+    // rng v1
     {
       name: "Random Name Generator Version 1",
       date: "",
@@ -251,6 +276,8 @@ export class ProjectsServiceService {
       screenshot3: "./../../../assets/images/projectScreenShots/random_ss3.png",
       expandedDescription: ""
     },
+
+    // DOM
     {
       name: "DOM Manipulations",
       date: "",
@@ -267,6 +294,8 @@ export class ProjectsServiceService {
       screenshot3: "./../../../assets/images/projectScreenShots/dom_ss3.png",
       expandedDescription: ""
     },
+
+      // More
     // {
     //   name: "More!?",
     // date: "",
@@ -283,6 +312,8 @@ export class ProjectsServiceService {
     //   screenshot3: "./../../../assets/images/projectScreenShots/.png",
     //   expandedDescription: ""
     // },
+    // 
+    // Null
     // {
     //   name: "!null",
     // date: "",
@@ -299,18 +330,20 @@ export class ProjectsServiceService {
     //   screenshot3: "./../../../assets/images/projectScreenShots/.png",
     //   expandedDescription: ""
     // },
+    // 
+    // 
   ];
 
-  //function that gets called on init that sets up the list
-  sendList(): IProject[]{
-    return this.projectList;
-  }
+//function that gets called on init that sets up the list
+sendList(): IProject[]{
+  return this.projectList;
+}
 
-  setProject(value: IProject){
-    this.currentProj = value;
-  }
+setProject(value: IProject){
+  this.currentProj = value;
+}
 
-  returnProject(){
-    return this.currentProj;
-  }
+returnProject(){
+  return this.currentProj;
+}
 }

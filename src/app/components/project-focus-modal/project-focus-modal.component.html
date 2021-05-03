@@ -1,9 +1,9 @@
-<div class="dark">
+<div class="info">
 
 
     <ng-template #content let-modal>
         <div class="modal-header">
-            <h3 class="modal-title">A Closer Look: <em>{{currentProject.name}}</em></h3>
+            <h3 class="modal-title">A Closer Look</h3>
             <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
                 <span aria-hidden="true">&times;</span>
             </button>
@@ -17,7 +17,7 @@
                     <div class="round green"></div>
                 </div>
                 <div>
-                    {{currentProject.name}}
+                    {{currentProject.name}} | A Closer Look
                 </div>
                 <div class="d-flex flex-row align-items-center">
                     <div class="round"></div>
@@ -26,17 +26,17 @@
                 </div>
             </div>
             <ngb-carousel class="image-top">
-                <ng-template ngbSlide>
+                <ng-template ngbSlide *ngIf="currentProject.screenshot1">
                     <div class="picsum-img-wrapper">
                         <img class="w-100" src="{{currentProject.screenshot1}}" alt="screen capture of {{currentProject.name}}">
                     </div>
                 </ng-template>
-                <ng-template ngbSlide>
+                <ng-template ngbSlide *ngIf="currentProject.screenshot2">
                     <div class="picsum-img-wrapper">
                         <img class="w-100" src="{{currentProject.screenshot2}}" alt="screen capture of {{currentProject.name}}">
                     </div>
                 </ng-template>
-                <ng-template ngbSlide>
+                <ng-template ngbSlide *ngIf="currentProject.screenshot3">
                     <div class="picsum-img-wrapper">
                         <img class="w-100" src="{{currentProject.screenshot3}}" alt="screen capture of {{currentProject.name}}">
                     </div>
@@ -46,14 +46,14 @@
             <!-- <img src="{{currentProject.screenshot2}}" style="width: 25%"/>
             <img src="{{currentProject.screenshot3}}" style="width: 25%"/> -->
             <div class="row mt-3">
-                <div class="col-8">
+                <div class="col-12 col-lg-8">
                     <p class="date">{{currentProject.date}}</p>
-                    <h5 class="mt-3 description">{{currentProject.name}}</h5>
+                    <h3 class="mt-3 description">{{currentProject.name}}</h3>
                     <p class="mt-3 description">{{currentProject.expandedDescription}}</p>
                 </div>
-                <div class="col-4 right-side">
+                <div class="col-12 col-lg-4 right-side">
                     <div class="my-3 description">
-                        <button class="btn btn-outline-dark btn-block" *ngIf="currentProject.liveUrl">
+                        <button class="btn btn-info btn-block" *ngIf="currentProject.liveUrl">
 
                             <span>Launch
                                 Site </span>
@@ -62,7 +62,7 @@
                             </a>
                         </button>
 
-                        <button class="btn btn-outline-dark btn-block" *ngIf="currentProject.repoUrl">
+                        <button class="btn btn-info btn-block" *ngIf="currentProject.repoUrl">
 
                             <span>View Source Code </span>
                             <a href={{currentProject.repoUrl}} target="_blank">
@@ -71,7 +71,7 @@
                             </a>
                         </button>
 
-                        <button class="btn btn-outline-dark btn-block" *ngIf="currentProject.xdUrl">
+                        <button class="btn btn-info btn-block" *ngIf="currentProject.xdUrl">
 
                             <span>Explore Prototype </span>
                             <a href={{currentProject.xdUrl}} target="_blank">
@@ -88,7 +88,7 @@
             </div>
         </div>
         <!-- <div class="modal-footer">
-            <button type="button" class="btn btn-dark" (click)="modal.close('Close click')">Back to Project
+            <button type="button" class="btn btn-info" (click)="modal.close('Close click')">Back to Project
                 Gallery</button>
 
         </div> -->
