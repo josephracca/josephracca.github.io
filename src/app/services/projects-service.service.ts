@@ -40,10 +40,10 @@ export class ProjectsServiceService {
       repoUrl: "",
       liveUrl: "",
       xdUrl: "https://xd.adobe.com/view/68470547-6382-4749-bf88-0176a424e60a-3d14/?fullscreen&hints=off",
-      screenshot1: "./../../../assets/images/projectScreenShots/hfp_ss1.png",
+      screenshot1: "./../../../assets/images/projectScreenShots/hfp_ss2.png",
       screenshot2: "./../../../assets/images/projectScreenShots/hfp_ss1.png",
-      screenshot3: "./../../../assets/images/projectScreenShots/hfp_ss1.png",
-      expandedDescription: ""
+      screenshot3: "./../../../assets/images/projectScreenShots/hfp_ss3.png",
+      expandedDescription: "In March, Anothay Chansy and I began the design for the HFP website redevelopment. We started with wireframing a few different layouts, and after approval, we began to prototype in Xd based on the direction given to us by the company's executive team. As of May 3rd, we will begin the development phase. With 5 Junior Web Developmer Interns, we will start building the project using Velo by Wix. Our target date for completion is end of May 2021. Figure 1 is the original website that the organization had before we started the redevelopment. "
     },
     // Tokay Press
     {
@@ -57,10 +57,10 @@ export class ProjectsServiceService {
       repoUrl: "https://josephracca.github.io/josephracca.github.io/",
       liveUrl: "https://www.tokaypress.com/",
       xdUrl: "",
-      screenshot1: "./../../../assets/images/projectScreenShots/tp_ss1.png",
-      screenshot2: "",
-      screenshot3: "",
-      expandedDescription: "This was one of my greatest accomplishments during the early part of our time at CodeStack Academy. As an assignment, we were tasked with choosing a local business and redeveloping their website. I was so happy with the outcome, that I decided to put it in front of the business owner. She enjoyed it so much that she decided to invest in it and we ended up publishing the project. Tokay Press is a local print and design, all-in-one company."
+      screenshot1: "./../../../assets/images/projectScreenShots/tp_ss2.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/tp_ss3.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/tp_ss1.png",
+      expandedDescription: "This was one of my greatest accomplishments during the early part of our time at CodeStack Academy. As an assignment, we were tasked with choosing a local business and redeveloping their website. I was so happy with the outcome that I decided to put it in front of the business owner. She enjoyed it so much that she decided to invest in it and we ended up publishing the project. Tokay Press is a local print and design, all-in-one company."
     },
     // DoND
     {
