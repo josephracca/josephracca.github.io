@@ -12,4 +12,8 @@ export class FeaturedComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  comingSoon() {
+    alert("Good things come to those who wait, so check back soon!")
+  }
+
 }

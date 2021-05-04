@@ -4,9 +4,9 @@ import { KataPostComponent } from './components/kata-post/kata-post.component';
 import { MainComponent } from './pages/main/main.component';
 
 const routes: Routes = [
-  { path: "main", component: MainComponent },
+  { path: "", component: MainComponent },
   { path: "kata", component: KataPostComponent },
-  { path: "**", redirectTo: 'main', pathMatch: 'full' },
+  { path: "**", redirectTo: '', pathMatch: 'full' },
 ];
 
 @NgModule({
