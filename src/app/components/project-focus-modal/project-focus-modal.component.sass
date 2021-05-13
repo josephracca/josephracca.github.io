@@ -26,26 +26,32 @@ h3.modal-title, .description
     // height: 600px
     object-fit: cover
     object-position: top center
-    background: #00000025
+    background: #d5d5d5
     padding: 0px 5px 5px 5px
     border-radius: 0px 0px 3px 3px
 
 .window-title
     padding: 5px 5px 5px 5px
     border-radius: 10px 10px 0px 0px
-    background: #00000025
+    background: #d5d5d5
     text-align: center
     color: black
     font-weight: 500
     display: flex
     justify-content: center
 
+@media (min-width: 992px) 
+    .right-side
+        border-left: 1px solid #a6a6a686
+     
+
+
 .right-side
-    border-left: 1px solid #00000025
+    border-left: none
 
 .date
     letter-spacing: 2px
-    color: gray
+    color: white
 
 .round
     width: 15px
@@ -68,3 +74,11 @@ h3.modal-title, .description
 
 .w-100
     width: 100%
+
+.modal-content
+    // background: #171717!important
+    // border: solid 2px #ffffff25 !important
+    box-shadow: 5px 5px 100px #00000080
+
+.white
+    color: black!important

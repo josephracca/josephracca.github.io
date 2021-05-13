@@ -24,31 +24,31 @@ export class ProjectsServiceService {
       liveUrl: "",
       xdUrl: "https://xd.adobe.com/view/83ba4eb2-bdcd-4ce3-af87-1f00d3808171-d6e9/screen/a24a5f43-8c1a-498f-bdb7-e450210388e8/",
       screenshot1: "./../../../assets/images/projectScreenShots/eightAnd_ss1.png",
-      screenshot2: "./../../../assets/images/projectScreenShots/eightAnd_ss1.png",
-      screenshot3: "./../../../assets/images/projectScreenShots/eightAnd_ss1.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/eightAnd_ss2.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/eightAnd_ss3.png",
       expandedDescription: "Originally ideated in November of 2020, EightAnd is a project that I pitched to a panel in November of 2020. Out of 22 pitches, my project was one of eight projects selected to be developed as a fullstack application. Our current goals for the project are to take it piece by piece, with half of the team working on the frontend and the other half on the backend and as we progress through each feature, get the front and back ends connected and communicating properly to one another. EightAnd was born out of my experience in a performance group and the logistics that have been segmented into different platforms. I wanted it to cover all of those logisitcal headached: communication, scheduling, and inventory."
     },
     //HFP
     {
       name: "HealthForce Partners Internship",
-      date: "",
+      date: "03.01.2021 - IN PROGRESS",
       text: "black",
       color: "#0F6480",
       logo: "./../../../assets/images/proj_logos/HFP.svg",
       desc: "Responsible for redesigning the organization's website to be later built using Velo by Wix. Co-designed with A. Chansy and developed with T. Womack, J. Morales, and K. Martinez,",
-      tags: ["theinternship", "UI/UX", "design", "frontend", "redevelopment"],
+      tags: ["theinternship", "UI/UX", "design", "frontend", "redevelopment", "VeloByWix", "nodeJS"],
       repoUrl: "",
       liveUrl: "",
       xdUrl: "https://xd.adobe.com/view/68470547-6382-4749-bf88-0176a424e60a-3d14/?fullscreen&hints=off",
-      screenshot1: "./../../../assets/images/projectScreenShots/hfp_ss2.png",
-      screenshot2: "./../../../assets/images/projectScreenShots/hfp_ss1.png",
+      screenshot1: "./../../../assets/images/projectScreenShots/hfp_ss1.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/hfp_ss2.png",
       screenshot3: "./../../../assets/images/projectScreenShots/hfp_ss3.png",
-      expandedDescription: "In March, Anothay Chansy and I began the design for the HFP website redevelopment. We started with wireframing a few different layouts, and after approval, we began to prototype in Xd based on the direction given to us by the company's executive team. As of May 3rd, we will begin the development phase. With 5 Junior Web Developmer Interns, we will start building the project using Velo by Wix. Our target date for completion is end of May 2021. Figure 1 is the original website that the organization had before we started the redevelopment. "
+      expandedDescription: "In March, Anothay Chansy and I began the design for the HFP website redevelopment. We started with wireframing a few different layouts, and after approval, we began to prototype in Xd based on the direction given to us by the company's executive team. As of May 3rd, we will begin the development phase. With five other Junior Web Developmer Interns, we will start building the project using Velo by Wix. Our target date for completion is end of May 2021."
     },
     // Tokay Press
     {
       name: "Tokay Press",
-      date: "",
+      date: "NOVEMBER 2020",
       text: "black",
       color: "#8BDDD7",
       logo: "./../../../assets/images/proj_logos/tokay.svg",
@@ -57,32 +57,32 @@ export class ProjectsServiceService {
       repoUrl: "https://josephracca.github.io/josephracca.github.io/",
       liveUrl: "https://www.tokaypress.com/",
       xdUrl: "",
-      screenshot1: "./../../../assets/images/projectScreenShots/tp_ss2.png",
-      screenshot2: "./../../../assets/images/projectScreenShots/tp_ss3.png",
-      screenshot3: "./../../../assets/images/projectScreenShots/tp_ss1.png",
+      screenshot1: "./../../../assets/images/projectScreenShots/tp_ss1.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/tp_ss2.png",
+      screenshot3: "",
       expandedDescription: "This was one of my greatest accomplishments during the early part of our time at CodeStack Academy. As an assignment, we were tasked with choosing a local business and redeveloping their website. I was so happy with the outcome that I decided to put it in front of the business owner. She enjoyed it so much that she decided to invest in it and we ended up publishing the project. Tokay Press is a local print and design, all-in-one company."
     },
     // DoND
     {
       name: "DoND: Rupaul Edition",
-      date: "",
+      date: "SEPTEMBER 2020",
       text: "black",
       color: "#B81556",
       logo: "./../../../assets/images/proj_logos/DoND.png",
       desc: "Deal or No Deal?! but sick'ning. Built in Unity, assets borrowed from multiple artists and sources online. Check back soon! I'm working on getting that built as a webGL on Unity.",
-      tags: ["csharp", "unity", "process", "beta"],
+      tags: ["csharp", "unity", "process", "betaTesting", "wireframes", "flowcharts", "pseudocode"],
       repoUrl: "",
       liveUrl: "",
       xdUrl: "",
       screenshot1: "./../../../assets/images/projectScreenShots/dond_ss1.png",
-      screenshot2: "./../../../assets/images/projectScreenShots/dond_ss1.png",
-      screenshot3: "./../../../assets/images/projectScreenShots/dond_ss1.png",
-      expandedDescription: ""
+      screenshot2: "./../../../assets/images/projectScreenShots/dond_ss2.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/dond_ss3.png",
+      expandedDescription: "Deal or No Deal? You've seen it on tv, at the arcades, even at casinos but have you ever seen it this sick'ning? Probably not. From start to finish, this has to be one of the most difficult projects I've done so far in my time as a developer for one main reason: THIS WAS THE PROJECT that we had to finish in order for us to start level one of our coding academy. In the combine, we were tasked with learning the basics of object oriented programming with none other than C#. It was eye-opening for me and it was fun the whole way through, late nights, really late nights, but overall a very satisfying journey."
     },
     // A41
     {
-      name: "All For One",
-      date: "",
+      name: "All For One: A Re-Do",
+      date: "SEPTEMBER 2020 && JAN - FEB 2021",
       text: "black",
       color: "#F7C52D",
       logo: "./../../../assets/images/proj_logos/doggies.svg",
@@ -92,9 +92,9 @@ export class ProjectsServiceService {
       liveUrl: "http://josephracca.azurewebsites.net/a41/",
       xdUrl: "",
       screenshot1: "./../../../assets/images/projectScreenShots/a41_ss1.png",
-      screenshot2: "./../../../assets/images/projectScreenShots/a41_ss1.png",
-      screenshot3: "./../../../assets/images/projectScreenShots/a41_ss1.png",
-      expandedDescription: ""
+      screenshot2: "./../../../assets/images/projectScreenShots/a41_ss2.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/a41_ss3.png",
+      expandedDescription: "Revisiting an Old Assignment was the essence of this project. I was one of the lucky few that got to re-do a C#/Unity project and refactor that into a JSX React project. This project really got me familiar with using ternaries, understanding functional and class components. It was an interesting shift from plain ol' vanila JavaScript, especialyl when it came to manipulating the DOM. I would say react was a pretty fun library to work in and hopefully soon, I'll be able to get more practice in it."
     },
 
     // calculator
@@ -110,9 +110,9 @@ export class ProjectsServiceService {
       liveUrl: "http://josephracca.azurewebsites.net/calculatoJr/",
       xdUrl: "",
       screenshot1: "./../../../assets/images/projectScreenShots/calc_ss1.png",
-      screenshot2: "./../../../assets/images/projectScreenShots/calc_ss1.png",
-      screenshot3: "./../../../assets/images/projectScreenShots/calc_ss1.png",
-      expandedDescription: ""
+      screenshot2: "",
+      screenshot3: "",
+      expandedDescription: "Inspired by the iOS design language, specifically the calculator app, I built this calculator as a follow-along during a class lecture and styled it after to give it that refined, user-friendly, dark-mode feel. There are a few flukes in it, but overall with the time that I had to complete it, I got a spot that I am proud of."
     },
 
     // weather app
