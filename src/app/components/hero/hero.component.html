@@ -30,9 +30,10 @@
                     <span style="color: magenta">ui/ux designer</span>
                 </h3>
             </div>
-            <div class="col-12 text-center">
+            <div class="col-12 text-center pointer" (click)="doSomethingCool('gallery')">
                 <!-- <h5 class="mt-5 pt-5">see my latest projects</h5> -->
-                <img class="mt-4 blink_me" src="./../../../assets/images/Icons/down_chevrons.svg" />
+                <p>{{action ? action : 'tap'}} to see my latest projects</p>
+                <img class="mt-4 blink_me" src="./../../../assets/images/Icons/down_chevrons.svg" alt="down chevrons to projects" />
             </div>
         </div>
     </div>
