@@ -20,7 +20,7 @@ export class HeroComponent implements OnInit {
   }
 
   doSomethingCool(elementId: string): void {
-    console.log("go down");
+    // console.log("go down");
     this.viewportScroller.scrollToAnchor(elementId);
   }
 
@@ -31,10 +31,10 @@ export class HeroComponent implements OnInit {
       // this.myDate = new Date();
       //now iterate through array
       let actionWordsList = ["click", "tap", "scroll"]
-      console.log("test");
+      // console.log("test");
 
       this.action = actionWordsList[Math.floor(Math.random() * actionWordsList.length)]
-      console.log(this.action);
+      // console.log(this.action);
       // just testing if it is working
       // return "string";
     }, 1700);
