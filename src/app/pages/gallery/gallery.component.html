@@ -1,4 +1,4 @@
-<div class="container-fluid mx-0 px-0 p-5" style="background-color: rgb(26, 26, 26);">
+<div class="container-fluid mx-0 px-0 p-5" style="background-color: #1a1a1a;">
     <h3>
         MY WORK
     </h3>
@@ -21,7 +21,7 @@
     <div class="row d-flex justify-content-center px-0 mx-0">
         <div id="hoverProject" *ngFor="let project of projectList, index as i" (mouseenter)="sendIndex(projectList[i])">
 
-            <div id="first" class="projectBox" style="color: {{project.text}}; background-color: {{project.color}};">
+            <div id="first" class="projectBox" [style.background-color]="projectList[i].color">
                 <!-- {{project.name}} -->
                 <div class="row">
                     <div class="col-12">

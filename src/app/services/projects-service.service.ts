@@ -173,7 +173,7 @@ export class ProjectsServiceService {
     {
       name: "Top 10",
       date: "",
-      text: "black",
+      text: "white",
       color: "#3C75AD",
       logo: "./../../../assets/images/proj_logos/top10.svg",
       desc: "A collab with A Chansy, where we feature our top animes and video games.",
@@ -191,7 +191,7 @@ export class ProjectsServiceService {
     {
       name: "R&OM",
       date: "",
-      text: "black",
+      text: "white",
       color: "#0F2230",
       logo: "./../../../assets/images/proj_logos/R&OM.svg",
       desc: "An app that allows you to add/remove names from a list, randomize a name from said list, or generate groups based on size or number of groups desired.",
@@ -227,7 +227,7 @@ export class ProjectsServiceService {
     {
       name: "Muzzles",
       date: "",
-      text: "black",
+      text: "white",
       color: "#5F022B",
       logo: "./../../../assets/images/proj_logos/paw.png",
       desc: "Our first, multi-person project, first time using GitHub repos to collaborate with other devs.",
@@ -245,7 +245,7 @@ export class ProjectsServiceService {
     {
       name: "Le Petite Maison",
       date: "",
-      text: "black",
+      text: "white",
       color: "#000324",
       logo: "./../../../assets/images/proj_logos/hamster.png",
       desc: "A fun school assignment to get used to working with Bootstrap. Book now!",
@@ -281,7 +281,7 @@ export class ProjectsServiceService {
     {
       name: "DOM Manipulations",
       date: "",
-      text: "black",
+      text: "white",
       color: "#181818",
       logo: "./../../../assets/images/proj_logos/DOM.svg",
       desc: "A project to teach us how to get comfortable manipulating the DOM.",
