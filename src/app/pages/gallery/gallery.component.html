@@ -7,11 +7,12 @@
         <h5>
             filter by:
             <span *ngIf="filterOn" class="hashtag hashtagLg" (click)="ngOnInit()">× Clear Filter</span>
-            <span class="hashtag hashtagLg" (click)="filterProjects('process')">#process</span>
+            <!-- <span class="hashtag hashtagLg" (click)="filterProjects('process')">#process</span> -->
             <span class="hashtag hashtagLg" (click)="filterProjects('csharp')">#csharp</span>
             <span class="hashtag hashtagLg" (click)="filterProjects('javascript')">#javascript</span>
             <span class="hashtag hashtagLg" (click)="filterProjects('angular')">#angular</span>
-            <span class="hashtag hashtagLg" (click)="filterProjects('design')">#design</span>
+            <span class="hashtag hashtagLg" (click)="filterProjects('typescript')">#typescript</span>
+            <span class="hashtag hashtagLg" (click)="filterProjects('ui/ux design')">#ui/ux design</span>
             <span class="hashtag hashtagLg" (click)="filterProjects('react')">#react</span>
             <span class="hashtag hashtagLg" (click)="filterProjects('css')">#css</span>
             <span class="hashtag hashtagLg" (click)="filterProjects('html')">#html</span>
@@ -25,8 +26,16 @@
                 <!-- {{project.name}} -->
                 <div class="row">
                     <div class="col-12">
-                        <div class="row d-flex justify-content-center">
-                            <img src="{{project.logo}}" />
+                        
+                        <div  style="height: 175px">
+                            <div class="row d-flex justify-content-center align-items-center" style="height: 100%">
+                                <img src="{{project.logo}}" />
+                            </div>
+                        </div>
+                        <hr [style.border-color]="project.text" style="opacity: 10%">
+                        <div class="col-12 mt-3" style="position: relative; bottom: 0px;">
+                            <h5 [style.color]="project.text" class="text-center mb-0" style="text-transform: uppercase; font-size: 1rem;">{{project.name}}</h5>
+                            <p [style.color]="project.text" style="opacity: 60%; text-transform: uppercase; font-size: .8rem;" class="text-center mb-0">{{project.subtitle}}</p>
                         </div>
                         <!-- <div class="row">
                             <h5 class="text-center pt-3">{{project.name}}</h5>
@@ -38,13 +47,18 @@
 
             <div id="second" class="projectBoxBack col fadeIn">
                 <div class="row">
-                    <div class="col-12">
+                    <!-- <div class="col-12">
                         <h5>{{project.name}}</h5>
-                    </div>
+                    </div> -->
                     <div class="col-12">
-                        <p class="adjustLine">
+                        <p class="adjustLine m-0">
                             {{project.desc}}
                         </p>
+                    </div>
+                    <div class="col-12 my-2 d-flex justify-content-center">
+                        <div *ngFor="let tech of project.technologies">
+                            <img class="tech-used mx-2" src="{{tech}}" alt="{{tech}}">
+                        </div>
                     </div>
                     <!-- <div class="col-12 my-3">
                         <span *ngIf="project.repoUrl || project.liveUrl || project.xdUrl">Launch Project: </span>
@@ -62,10 +76,11 @@
                             <img style="width: 24.618px" *ngIf="project.xdUrl"
                                 src="./../../../assets/images/project_card/cc_xd.svg" />
                             </a>
-                    </div> -->
-                    <div class="col-12">
+                        </div> -->
+                    <div class="col-12 mt-2">
                         <app-project-focus-modal></app-project-focus-modal>
                     </div>
+
                 </div>
             </div>
         </div>

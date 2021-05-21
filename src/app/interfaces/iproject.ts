@@ -1,6 +1,7 @@
 export interface IProject {
     name: string,
     date: string,
+    subtitle: string,
     text: string,
     color: string,
     logo: string,
@@ -12,5 +13,7 @@ export interface IProject {
     screenshot1: string,
     screenshot2: string,
     screenshot3: string,
-    expandedDescription: string
+    expandedDescription: string,
+    importance: number,
+    technologies: string[]
 }
