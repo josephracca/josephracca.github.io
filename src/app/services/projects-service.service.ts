@@ -96,7 +96,7 @@ export class ProjectsServiceService {
     {
       name: "All For One",
       date: "SEPTEMBER 2020 && JAN - FEB 2021",
-      subtitle: "Recreating a C# Project in React JS",
+      subtitle: "Recreating a C# Project in React",
       text: "black",
       color: "#F7C52D",
       logo: "./../../../assets/images/proj_logos/doggies.svg",
@@ -344,7 +344,7 @@ export class ProjectsServiceService {
       technologies: this.returnIconArray(["dev_html5.svg", "dev_css3.svg", "dev_bootstrap.svg", "dev_javascript.svg"])
     },
 
-      // More
+    // More
     // {
     //   name: "More!?",
     // date: "",
@@ -389,19 +389,19 @@ export class ProjectsServiceService {
     // 
   ];
 
-//function that gets called on init that sets up the list
-sendList(): IProject[]{
-  return this.projectList;
-}
+  //function that gets called on init that sets up the list
+  sendList(): IProject[] {
+    return this.projectList;
+  }
 
-setProject(value: IProject){
-  this.currentProj = value;
-}
+  setProject(value: IProject) {
+    this.currentProj = value;
+  }
 
-returnProject(){
-  return this.currentProj;
-}
-  
+  returnProject() {
+    return this.currentProj;
+  }
+
   returnIconArray(incoming: string[]) {
     return incoming.map(e => "./../../../assets/images/Icons/" + e);
   }

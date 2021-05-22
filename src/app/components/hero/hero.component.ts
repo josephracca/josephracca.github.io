@@ -39,11 +39,11 @@ export class HeroComponent implements OnInit {
       // return "string";
     }, 1700);
 
-    
+
   }
 
 
 
-  
+
 
 }

@@ -29,7 +29,7 @@ export class SkillsetComponent implements OnInit {
       path: "./../../../assets/images/Icons/dev_react.svg"
     },
     {
-      name: "Angular 11+",
+      name: "Angular 11",
       path: "./../../../assets/images/Icons/dev_angular.svg"
     },
     {
