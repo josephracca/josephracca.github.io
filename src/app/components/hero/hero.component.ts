@@ -21,7 +21,8 @@ export class HeroComponent implements OnInit {
 
   doSomethingCool(elementId: string): void {
     // console.log("go down");
-    this.viewportScroller.scrollToAnchor(elementId);
+    // this.viewportScroller.scrollToAnchor(elementId);
+    document.getElementById(elementId)?.scrollIntoView({behavior: "smooth"});
   }
 
   changeActionWord() {

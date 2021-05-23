@@ -11,16 +11,17 @@
     <div class="row px-0 mx-0 py-4">
         <h5>
             filter by:
-            <span *ngIf="filterOn" class="hashtag hashtagLg" (click)="ngOnInit()">× Clear Filter</span>
-            <!-- <span class="hashtag hashtagLg" (click)="filterProjects('process')">#process</span> -->
-            <span class="hashtag hashtagLg" (click)="filterProjects('csharp')">#csharp</span>
-            <span class="hashtag hashtagLg" (click)="filterProjects('javascript')">#javascript</span>
-            <span class="hashtag hashtagLg" (click)="filterProjects('angular')">#angular</span>
-            <span class="hashtag hashtagLg" (click)="filterProjects('typescript')">#typescript</span>
-            <span class="hashtag hashtagLg" (click)="filterProjects('ui/ux design')">#ui/ux design</span>
-            <span class="hashtag hashtagLg" (click)="filterProjects('react')">#react</span>
-            <span class="hashtag hashtagLg" (click)="filterProjects('css')">#css</span>
-            <span class="hashtag hashtagLg" (click)="filterProjects('html')">#html</span>
+            <!-- <button *ngIf="filterOn" class="hashtag hashtagLg" (click)="ngOnInit()">× Clear Filter</button> -->
+            <!-- <button class="hashtag hashtagLg" (click)="filterProjects('process')">#process</button> -->
+            <button id="js" class="hashtag hashtagLg" (click)="filterProjects('javascript', $event.target)">#javascript</button>
+            <!--  (click)="yourFunc($event.target) -->
+            <button class="hashtag hashtagLg" (click)="filterProjects('csharp', $event.target)">#csharp</button>
+            <button class="hashtag hashtagLg" (click)="filterProjects('angular', $event.target)">#angular</button>
+            <button class="hashtag hashtagLg" (click)="filterProjects('typescript', $event.target)">#typescript</button>
+            <button class="hashtag hashtagLg" (click)="filterProjects('ui/ux design', $event.target)">#ui/ux design</button>
+            <button class="hashtag hashtagLg" (click)="filterProjects('react', $event.target)">#react</button>
+            <button class="hashtag hashtagLg" (click)="filterProjects('css', $event.target)">#css</button>
+            <button class="hashtag hashtagLg" (click)="filterProjects('html', $event.target)">#html</button>
         </h5>
     </div>
 
@@ -69,17 +70,17 @@
                         </div>
                     </div>
                     <!-- <div class="col-12 my-3">
-                        <span *ngIf="project.repoUrl || project.liveUrl || project.xdUrl">Launch Project: </span>
+                        <span *ngIf="project.repoUrl || project.liveUrl || project.xdUrl">Launch Project: </button>
                         <a href={{project.liveUrl}} target="_blank">
                             <img *ngIf="project.liveUrl"
                                 src="./../../../assets/images/project_card/Icon ionic-md-open.svg" />
                             </a>
-                        <span *ngIf="project.repoUrl && project.liveUrl"> | </span>
+                        <span *ngIf="project.repoUrl && project.liveUrl"> | </button>
                         <a href={{project.repoUrl}} target="_blank">
                             <img *ngIf="project.repoUrl"
                                 src="./../../../assets/images/project_card/Icon awesome-github.svg" alt="gh logo" />
                             </a>
-                            <span *ngIf="project.repoUrl && project.liveUrl && project.xdUrl"> | </span>
+                            <span *ngIf="project.repoUrl && project.liveUrl && project.xdUrl"> | </button>
                         <a href={{project.xdUrl}} target="_blank">
                             <img style="width: 24.618px" *ngIf="project.xdUrl"
                                 src="./../../../assets/images/project_card/cc_xd.svg" />
