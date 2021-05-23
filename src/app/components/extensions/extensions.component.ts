@@ -31,4 +31,9 @@ export class ExtensionsComponent implements OnInit {
     console.log(value)
   }
 
+  sendIndex(value: IProject) {
+    // console.log("send to service:", value)
+    this.projectService.setProject(value);
+  }
+
 }

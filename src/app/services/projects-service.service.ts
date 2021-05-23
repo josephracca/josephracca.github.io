@@ -15,7 +15,7 @@ export class ProjectsServiceService {
     {
       name: "EightAnd",
       date: "11.01.2020 - IN PROGRESS",
-      subtitle: "A Fullstack Application",
+      subtitle: "A PERFORMANCE LOGISTICS APP",
       text: "#FFFFFF",
       color: "#334956",
       logo: "./../../../assets/images/proj_logos/EightAnd.png",
@@ -112,57 +112,15 @@ export class ProjectsServiceService {
       importance: 0,
       technologies: this.returnIconArray(["dev_csharp.svg", "dev_react.svg", "dev_css3.svg", "dev_bootstrap.svg"])
     },
-
-    // calculator
-    // {
-    //   name: "calculatoJr",
-    //   date: "",
-    // subtitle: "",
-    //   text: "black",
-    //   color: "#009E42",
-    //   logo: "./../../../assets/images/proj_logos/calc.svg",
-    //   desc: "A simple calculator app that allowed me to learn and use React.",
-    //   tags: ["html", "css", "react", "javascript"],
-    //   repoUrl: "https://github.com/josephracca/calculator",
-    //   liveUrl: "http://josephracca.azurewebsites.net/calculatoJr/",
-    //   xdUrl: "",
-    //   screenshot1: "./../../../assets/images/projectScreenShots/calc_ss1.png",
-    //   screenshot2: "",
-    //   screenshot3: "",
-    //   expandedDescription: "Inspired by the iOS design language, specifically the calculator app, I built this calculator as a follow-along during a class lecture and styled it after to give it that refined, user-friendly, dark-mode feel. There are a few flukes in it, but overall with the time that I had to complete it, I got a spot that I am proud of.",
-    //   importance: 0,
-    //   technologies: this.returnIconArray([])
-    // },
-
-    // weather app
-    // {
-    //   name: "Weather.Gogh",
-    //   date: "",
-    // subtitle: "",
-    //   text: "black",
-    //   color: "#E96E51",
-    //   logo: "./../../../assets/images/proj_logos/cloud.png",
-    //   desc: "A weather application, originally designed and prototyped by H. Mejia, then developed by yours truly. Pulled data from OpenWeatherMap Weather API.",
-    //   tags: ["switchedAtCode", "collab", "APIcall", "Xd"],
-    //   repoUrl: "https://github.com/josephracca/fyreWeather",
-    //   liveUrl: "http://josephracca.azurewebsites.net/weather.gogh2/",
-    //   xdUrl: "",
-    //   screenshot1: "./../../../assets/images/projectScreenShots/fyre_ss1.png",
-    //   screenshot2: "./../../../assets/images/projectScreenShots/fyre_ss1.png",
-    //   screenshot3: "./../../../assets/images/projectScreenShots/fyre_ss1.png",
-    //   expandedDescription: "",
-    //   importance: 0,
-    //   technologies: this.returnIconArray([])
-    // },
-
-    // flashcards
-    {
-      name: "flash.commit",
-      date: "",
-      subtitle: "a flashcard app for studying",
-      text: "black",
-      color: "#AED951",
-      logo: "./../../../assets/images/proj_logos/flash.svg",
+      
+      // flashcards
+      {
+        name: "flash.commit",
+        date: "",
+        subtitle: "a flashcard app for studying",
+        text: "black",
+        color: "#AED951",
+        logo: "./../../../assets/images/proj_logos/flash.svg",
       desc: "Flash.Commit is an application I designed and built using HTML, CSS, and vanila JS. Utilizes wicked css and some custom animation for the card flips. The data, currently programming concepts, is being pulled from a google sheet.",
       tags: ["sprintweek", "html", "javascript", "css"],
       repoUrl: "https://github.com/josephracca/flashCommit",
@@ -175,7 +133,7 @@ export class ProjectsServiceService {
       importance: 0,
       technologies: this.returnIconArray(["dev_html5.svg", "dev_css3.svg", "dev_bootstrap.svg", "dev_javascript.svg", "cc_xd.svg"])
     },
-
+    
     // rpsls
     {
       name: "Rock, Paper, Scissors",
@@ -196,33 +154,54 @@ export class ProjectsServiceService {
       importance: 0,
       technologies: this.returnIconArray(["dev_html5.svg", "dev_css3.svg", "dev_bootstrap.svg", "dev_javascript.svg", "cc_xd.svg"])
     },
-
+    
     // top10
     // {
-    //   name: "Top 10",
-    //   date: "",
-    // subtitle: "",
-    //   text: "white",
-    //   color: "#3C75AD",
-    //   logo: "./../../../assets/images/proj_logos/top10.svg",
-    //   desc: "A collab with A Chansy, where we feature our top animes and video games.",
-    //   tags: ["html", "css", "bootstrap", "collab"],
-    //   repoUrl: "",
-    //   liveUrl: "http://josephraccainit.azurewebsites.net/TopFaves/",
-    //   xdUrl: "",
-    //   screenshot1: "./../../../assets/images/projectScreenShots/fave_ss1.png",
-    //   screenshot2: "./../../../assets/images/projectScreenShots/fave_ss2.png",
-    //   screenshot3: "./../../../assets/images/projectScreenShots/fave_ss3.png",
-    //   expandedDescription: "",
-    //   importance: 0,
-    //   technologies: this.returnIconArray([])
-    // },
+      //   name: "Top 10",
+      //   date: "",
+      // subtitle: "",
+      //   text: "white",
+      //   color: "#3C75AD",
+      //   logo: "./../../../assets/images/proj_logos/top10.svg",
+      //   desc: "A collab with A Chansy, where we feature our top animes and video games.",
+      //   tags: ["html", "css", "bootstrap", "collab"],
+      //   repoUrl: "",
+      //   liveUrl: "http://josephraccainit.azurewebsites.net/TopFaves/",
+      //   xdUrl: "",
+      //   screenshot1: "./../../../assets/images/projectScreenShots/fave_ss1.png",
+      //   screenshot2: "./../../../assets/images/projectScreenShots/fave_ss2.png",
+      //   screenshot3: "./../../../assets/images/projectScreenShots/fave_ss3.png",
+      //   expandedDescription: "",
+      //   importance: 0,
+      //   technologies: this.returnIconArray([])
+      // },
 
-    // random group gen
+
+    // weather app
     {
-      name: "R&OM",
+      name: "Weather.Gogh",
       date: "",
-      subtitle: "A Group-Generating Application",
+      subtitle: "UNDERSTANDING THE CLIENT",
+      text: "black",
+      color: "#E96E51",
+      logo: "./../../../assets/images/proj_logos/cloud.png",
+      desc: "A weather application, originally designed and prototyped by H. Mejia, then developed by yours truly. Pulled data from OpenWeatherMap Weather API.",
+      tags: ["switchedAtCode", "collab", "APIcall", "Xd"],
+      repoUrl: "https://github.com/josephracca/fyreWeather",
+      liveUrl: "http://josephracca.azurewebsites.net/weather.gogh2/",
+      xdUrl: "",
+      screenshot1: "./../../../assets/images/projectScreenShots/fyre_ss1.png",
+      screenshot2: "./../../../assets/images/projectScreenShots/fyre_ss1.png",
+      screenshot3: "./../../../assets/images/projectScreenShots/fyre_ss1.png",
+      expandedDescription: "",
+      importance: 0,
+      technologies: this.returnIconArray([])
+    },
+      // random group gen
+      {
+        name: "R&OM",
+        date: "",
+        subtitle: "A Group-Generating Application",
       text: "white",
       color: "#17436e",
       logo: "./../../../assets/images/proj_logos/R&OM.svg",
@@ -238,7 +217,27 @@ export class ProjectsServiceService {
       importance: 0,
       technologies: this.returnIconArray(["dev_html5.svg", "dev_css3.svg", "dev_bootstrap.svg", "dev_javascript.svg"])
     },
-
+    
+    // calculator
+    {
+      name: "calculatoJr",
+      date: "",
+    subtitle: "A REACT APPLICATION",
+      text: "black",
+      color: "#009E42",
+      logo: "./../../../assets/images/proj_logos/calc.svg",
+      desc: "A simple calculator app that allowed me to learn and use React.",
+      tags: ["html", "css", "react", "javascript"],
+      repoUrl: "https://github.com/josephracca/calculator",
+      liveUrl: "http://josephracca.azurewebsites.net/calculatoJr/",
+      xdUrl: "",
+      screenshot1: "./../../../assets/images/projectScreenShots/calc_ss1.png",
+      screenshot2: "",
+      screenshot3: "",
+      expandedDescription: "Inspired by the iOS design language, specifically the calculator app, I built this calculator as a follow-along during a class lecture and styled it after to give it that refined, user-friendly, dark-mode feel. There are a few flukes in it, but overall with the time that I had to complete it, I got a spot that I am proud of.",
+      importance: 0,
+      technologies: this.returnIconArray([])
+    },
     // upvote
     // {
     //   name: "UpVote",

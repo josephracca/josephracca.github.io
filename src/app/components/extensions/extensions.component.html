@@ -3,7 +3,7 @@
     QUICK LINKS TO PROJECT FILES
     <a href="javascript:void(0)" class="closebtn" (click)="closeExt()">&times;</a>
     <div *ngFor="let project of projectList; index as i" class="d-flex">
-        <div class="row my-3 d-flex align-items-center">
+        <div class="row my-3 d-flex align-items-center" (mouseenter)="sendIndex(projectList[i])">
             <div class="logo" [style.background-color]="projectList[i].color" style="border-radius: 50%">
                 <img src={{project.logo}} class="w100">
             </div>
@@ -12,16 +12,22 @@
                 <p class="desc">{{project.desc}}</p>
             </div>
             <div *ngIf="project.repoUrl">
-                <a href={{project.liveUrl}} target="_blank"><img class="iconFill" src="./../../../assets/images/project_card/Icon awesome-github.svg"
-                        alt="open in github" /></a>
+                <a href={{project.liveUrl}} target="_blank"><img class="iconFill"
+                        src="./../../../assets/images/project_card/Icon awesome-github.svg" alt="open in github" /></a>
             </div>
             <div *ngIf="project.liveUrl">
-                <a href={{project.liveUrl}} target="_blank"><img class="iconFill" src="./../../../assets/images/project_card/Icon ionic-md-open.svg" alt="open in github" /></a>
+                <a href={{project.liveUrl}} target="_blank"><img class="iconFill"
+                        src="./../../../assets/images/project_card/Icon ionic-md-open.svg" alt="open in github" /></a>
             </div>
             <div *ngIf="project.xdUrl">
-                <a href={{project.xdUrl}} target="_blank"><img class="iconFill xD" src="./../../../assets/images/project_card/cc_xd.svg"
-                        alt="open Xd prototype" /></a>
+                <a href={{project.xdUrl}} target="_blank"><img class="iconFill xD"
+                        src="./../../../assets/images/project_card/cc_xd.svg" alt="open Xd prototype" /></a>
             </div>
+<!-- <div class="row">
+    <div class="col">
+        <app-project-focus-modal style="z-index: 10000"></app-project-focus-modal>
+    </div>
+</div> -->
         </div>
     </div>
 </div>

@@ -1,51 +1,66 @@
 div#hoverProject div#first
     display: flex
-    transition: flex 2s
+    transition: display 2s
 
 div#hoverProject:hover div#first
     display: none
-    transition: none 2s
+    transition: display 2s
 
 div#hoverProject div#second
     display: none
-    transition: flex 2s
+    transition: display 2s
 
 div#hoverProject:hover div#second
     display: flex
-    transition: flex 2s
-        position: absolute
+    transition: display 2s
+    // position: absolute
 
-
-.projectBox, .projectBoxBack
+.projectBox, .projectBoxBack, .experiment
     // width: 300px
     // height: 300px
     min-width: 300px!important
     min-height: 300px!important
-    width: calc(100vw/5)
-    height: calc(100vw/5)
-    align-items: center    
+    width: calc(100vw/4.5)
+    height: calc(100vw/4.5)
+    align-items: center
     // color: #17436e
+    margin: 3px
 
 .projectBox
     background-color: black
     display: flex
     justify-content: center
     transition: background-color 1s, color 1s
-    margin: 10px
 
 // .projectBox:hover
 //     background-color: white
 //     color: black
 //     display: none
 
+.experiment
+    background: yellow
+    transition: background 2s , width 2s, height 2s
+      transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1)
+
+    
+
+    
+
+.experiment:hover
+    background: cyan
+    transition: background 2s , width 2s, height 2s
+      transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1)
+
+    width: 100vw
+    height: 350px
+
 .projectBoxBack
-    background-color: #00000090
+    background-color: #FFFFFF05
     // display: flex
     justify-content: center
     transition: background-color 1s, color 1s
     text-align: center
     padding: 30px
-    margin: 10px
 
 .adjustLine
     line-height: 18px
@@ -66,8 +81,10 @@ div#hoverProject:hover div#second
     display: inline-block
 
 .active
-    background-color: #EEEEEE
+    background-color: #e5ff00
     color: black
+    font-weight: 600
+    transition: background-color 1s, font-weight 1s
 
 .hashtagLg
     border-radius: 20px
@@ -81,10 +98,15 @@ div#hoverProject:hover div#second
     padding: 0px 20px 0px 20px
     margin: 5px 10px 5px 0
     font-weight: 400
+    transition: background-color 1s, font-weight 1s
 
 .tech-used
-    width:22px
+    width: 22px
     height: auto
 
 .subtitle-front
     letter-spacing: .5px
+
+.screenshot
+
+    

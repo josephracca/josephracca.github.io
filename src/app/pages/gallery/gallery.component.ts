@@ -12,7 +12,12 @@ import { ArrayType } from '@angular/compiler';
 export class GalleryComponent implements OnInit {
 
   projectList: IProject[] = [];
+  projectListDummy: IProject[] = [];
   filterOn: boolean = false;
+  timer: any;
+  index: number = 1;
+
+  projectSquares = document.getElementsByClassName('fadeIn');
 
   constructor(private projectService: ProjectsServiceService) { }
 
@@ -20,31 +25,58 @@ export class GalleryComponent implements OnInit {
     this.projectList = this.projectService.sendList();
     this.filterOn = false;
 
+    this.animationLoad();
+    // console.log(this.projectSquares);
+
+  }
+
+  animationLoad() {
+    if (this.projectList[0]) {
+      this.projectListDummy.push(this.projectList[0]);
+    }
+    this.timer = setInterval(() => {
+      if (this.index < this.projectList.length) {
+        this.projectListDummy.push(this.projectList[this.index]);
+        this.index++;
+      } else {
+        clearInterval(this.timer);
+      }
+    }, 150)
   }
 
   filterProjects(value: string, element: any) {
 
-    let hashtags = document.getElementsByClassName("hashtag");
+    function hashtagReset() {
+      let hashtags = document.getElementsByClassName("hashtag");
+
+      Array.from(hashtags).forEach(
+        function (element) {
+          // console.log(element);
+          element.classList.remove("active")
+        }
+      );
+    }
 
     if (element.classList.contains("active")) {
       //resets all filters
       this.ngOnInit();
+      this.projectListDummy = this.projectList;
     } else {
-      Array.from(hashtags).forEach(
-        function (element) {
-          console.log(element);
-          element.classList.remove("active")
-        }
-      );
-      this.ngOnInit();
+      hashtagReset();
+      // this.ngOnInit();
+      this.projectListDummy = this.projectList;
       // hashtags.classList.toggle("active");
-      this.projectList = this.projectList.filter(e => e.tags.includes(value))
-      this.filterOn = !this.filterOn;
+      this.projectListDummy = this.projectListDummy.filter(e => e.tags.includes(value))
     }
-    console.log(value, element.classList.contains("active"));
+    // console.log(this.checkFilter());
+    this.filterOn = this.checkFilter();
+    // console.log(value, element.classList.contains("active"));
     element.classList.toggle("active");
 
-    
+
+  }
+  checkFilter() {
+    return this.projectListDummy.length !== this.projectList.length
   }
 
   sendIndex(value: IProject) {
@@ -56,7 +88,12 @@ export class GalleryComponent implements OnInit {
     console.log(value.className)
     // document.querySelector(value).classname
     value.classList.toggle("active");
-    
+
+  }
+
+  reset() {
+    this.projectListDummy = this.projectList;
+    this.filterOn = this.checkFilter();
   }
 
 }
