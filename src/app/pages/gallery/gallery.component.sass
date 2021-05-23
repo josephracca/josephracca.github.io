@@ -24,13 +24,32 @@ div#hoverProject:hover div#second
     height: calc(100vw/4.5)
     align-items: center
     // color: #17436e
-    margin: 3px
+    margin: 10px
 
 .projectBox
     background-color: black
     display: flex
     justify-content: center
     transition: background-color 1s, color 1s
+
+    position: relative
+    // height: 100vh
+    // width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+.projectBox::before
+    content: ""
+    // background-image: url('./../../../assets/images/projectScreenShots/dond_ss1.png')
+    background-size: cover
+    background-position: center
+    position: absolute
+    top: 0px
+    right: 0px
+    bottom: 0px
+    left: 0px
+    opacity: 0.10
 
 // .projectBox:hover
 //     background-color: white
@@ -40,16 +59,12 @@ div#hoverProject:hover div#second
 .experiment
     background: yellow
     transition: background 2s , width 2s, height 2s
-      transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1)
-
-    
-
-    
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1)
 
 .experiment:hover
     background: cyan
     transition: background 2s , width 2s, height 2s
-      transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1)
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1)
 
     width: 100vw
     height: 350px
@@ -108,5 +123,3 @@ div#hoverProject:hover div#second
     letter-spacing: .5px
 
 .screenshot
-
-    

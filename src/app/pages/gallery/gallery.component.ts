@@ -96,4 +96,18 @@ export class GalleryComponent implements OnInit {
     this.filterOn = this.checkFilter();
   }
 
+  returnBG(numberIncoming: number) {
+    console.log(numberIncoming);
+    return `url(${this.projectListDummy[numberIncoming].screenshot1})`
+  }
+
+  galleryBGStyle = "content: \"\"\n  // background-image: url('https://placekitten.com/1200/800')!important\n  background-size: cover\nposition: absolute\ntop: 0px\nright: 0px\nbottom: 0px\nleft: 0px\nopacity: 0.75";
+
+  throwStyle(numberIncoming: number) {
+    return this.galleryBGStyle;
+    // `url(${this.projectListDummy[numberIncoming].screenshot1})`
+
+    
+  }
+
 }
