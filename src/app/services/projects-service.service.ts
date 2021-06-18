@@ -11,7 +11,7 @@ export class ProjectsServiceService {
   private currentProj: any;
 
   private projectList: IProject[] = [
-    //EightAnd
+    //EightAnd ====================================================
     {
       name: "EightAnd",
       date: "11.01.2020 - IN PROGRESS",
@@ -19,19 +19,20 @@ export class ProjectsServiceService {
       text: "#FFFFFF",
       color: "#334956",
       logo: "./../../../assets/images/proj_logos/EightAnd.png",
-      desc: "EightAnd solves the problem of segmented performance group logistics, including individual and group scheduling, internal and external performance requests and communications, and inventory management. This application is currently in development.",
+      desc: "EightAnd solves the problem of segmented performance group logistics, including individual and group scheduling, internal and external performance requests and communications, and inventory management. This application is currently in development. ",
       tags: ["fullstack", "adobexd", "ionic", "angular", "csharp", "frontend", "backend", "typescript", "wireframe", "ui/ux", "ui/ux design", "collaboration"],
       repoUrl: "",
       liveUrl: "",
       xdUrl: "https://xd.adobe.com/view/83ba4eb2-bdcd-4ce3-af87-1f00d3808171-d6e9/screen/a24a5f43-8c1a-498f-bdb7-e450210388e8/",
+      unityUrl: "",
       screenshot1: "./../../../assets/images/projectScreenShots/eightAnd_ss1.png",
       screenshot2: "./../../../assets/images/projectScreenShots/eightAnd_ss2.png",
       screenshot3: "./../../../assets/images/projectScreenShots/eightAnd_ss3.png",
-      expandedDescription: "Originally ideated in November of 2020, EightAnd is a project that I pitched to a panel in November of 2020. Out of 22 pitches, my project was one of eight projects selected to be developed as a fullstack application. Our current goals for the project are to take it piece by piece, with half of the team working on the frontend and the other half on the backend and as we progress through each feature, get the front and back ends connected and communicating properly to one another. EightAnd was born out of my experience in a performance group and the logistics that have been segmented into different platforms. I wanted it to cover all of those logisitcal headached: communication, scheduling, and inventory.",
+      expandedDescription: "It was born out of my experience in a performance group where logistics were segmented into different platforms. I pitched the idea to a panel in November 2020. Out of 22 pitches, my project was one of the final four projects selected to be developed as a fullstack application. EightAnd is built using TypeScript, Angular and Ionic on the front end and C# on the back end web API.",
       importance: 0,
       technologies: this.returnIconArray(["cc_xd.svg", "dev_typescript.svg", "dev_angular.svg", "dev_ionic.svg", "dev_csharp.svg"])
     },
-    //HFP
+    //HFP ====================================================
     {
       name: "HealthForce Partners",
       date: "03.01.2021 - IN PROGRESS",
@@ -44,14 +45,15 @@ export class ProjectsServiceService {
       repoUrl: "",
       liveUrl: "",
       xdUrl: "https://xd.adobe.com/view/68470547-6382-4749-bf88-0176a424e60a-3d14/?fullscreen&hints=off",
+      unityUrl: "",
       screenshot1: "./../../../assets/images/projectScreenShots/hfp_ss1.png",
       screenshot2: "./../../../assets/images/projectScreenShots/hfp_ss2.png",
       screenshot3: "./../../../assets/images/projectScreenShots/hfp_ss3.png",
-      expandedDescription: "In March of 2021, I began the redesign for HealthForce Partners' website redevelopment. I started with wireframing a few different layouts, and after approval, we began to prototype in Xd based on the direction given to us by the company's executive team. As of May 3rd, we will begin the development phase. With five other Junior Web Developmer Interns, we will start building the project using Velo by Wix. Our target date for completion is end of May 2021.",
+      expandedDescription: "This website redevelopment project began in March of 2021. After the inital client meeting, I started by wireframing different layouts that addressed their needs: user engagement, ease of navigation for different user types, and focusing and emphasizing on the HFP brand. After approval, I prototyped the wireframes in Xd. The target date for launch is July 9th. As lead for this project I conducted daily standups for a team of 5, and made sure the team stayed agile by using Jira to manage our tickets.",
       importance: 0,
       technologies: this.returnIconArray(["cc_xd.svg", "dev_javascript.svg"])
     },
-    // Tokay Press
+    // Tokay Press ====================================================
     {
       name: "Tokay Press",
       date: "NOVEMBER 2020",
@@ -59,40 +61,42 @@ export class ProjectsServiceService {
       text: "black",
       color: "#8BDDD7",
       logo: "./../../../assets/images/proj_logos/tokay.svg",
-      desc: "Redesigned, developed a new website for the business at a time when they needed it most: their website was compromised. The owner came to me after she learned that her website was hacked and was able to get her new site deployed in a few days.",
+      desc: "Redesigned and developed a new website for the business at a time when they needed it most. The owner came to me after she learned that her website was hacked and I was able to get her new site deployed in a few days.",
       tags: ["html", "css", "javascript", "xd"],
       // repoUrl: "https://josephracca.github.io/josephracca.github.io/",
       repoUrl: "",
       liveUrl: "https://www.tokaypress.com/",
       xdUrl: "",
+      unityUrl: "",
       screenshot1: "./../../../assets/images/projectScreenShots/tp_ss1.png",
       screenshot2: "./../../../assets/images/projectScreenShots/tp_ss2.png",
       screenshot3: "",
-      expandedDescription: "This was one of my greatest accomplishments during the early part of our time at CodeStack Academy. As an assignment, we were tasked with choosing a local business and redeveloping their website. I was so happy with the outcome that I decided to put it in front of the business owner. She enjoyed it so much that she decided to invest in it and we ended up publishing the project. Tokay Press is a local print and design, all-in-one company.",
+      expandedDescription: "Tokay Press is a local print and design, all-in-one company. Because I was able to convert this from a class assignment into a live website, this was one of my greatest accomplishments during the early part of our time at CodeStack Academy. As an assignment, we were tasked with choosing a local business and redeveloping their website. I was proud of the outcome that I decided to put it in front of the business owner. She decided to invest in it and is now using it as their website.",
       importance: 0,
       technologies: this.returnIconArray(["dev_html5.svg", "dev_css3.svg", "dev_bootstrap.svg", "dev_javascript.svg", "cc_xd.svg"])
     },
-    // DoND
+    // DoND ====================================================
     {
       name: "Deal or No Deal?!",
       date: "SEPTEMBER 2020",
       subtitle: "A Unity Project",
-      text: "black",
+      text: "white",
       color: "#B81556",
       logo: "./../../../assets/images/proj_logos/DoND.png",
-      desc: "Deal or No Deal?! but sick'ning. Built in Unity, assets borrowed from multiple artists and sources online. Check back soon! I'm working on getting that built as a webGL on Unity. In the meantime, check out some screenshots.",
+      desc: "Deal or No Deal?! but sick'ning. Built in Unity, assets borrowed from multiple artists and sources online. The WebGL build is new live and playable!",
       tags: ["csharp", "unity", "process", "betaTesting", "wireframes", "flowcharts", "pseudocode"],
       repoUrl: "",
       liveUrl: "",
       xdUrl: "",
+      unityUrl: "https://play.unity.com/mg/other/dond-mmcb",
       screenshot1: "./../../../assets/images/projectScreenShots/dond_ss1.png",
       screenshot2: "./../../../assets/images/projectScreenShots/dond_ss2.png",
       screenshot3: "./../../../assets/images/projectScreenShots/dond_ss3.png",
-      expandedDescription: "Deal or No Deal? You've seen it on tv, at the arcades, even at casinos but have you ever seen it this sick'ning? Probably not. From start to finish, this has to be one of the most difficult projects I've done so far in my time as a developer for one main reason: THIS WAS THE PROJECT that we had to finish in order for us to start level one of our coding academy. In the combine, we were tasked with learning the basics of object oriented programming with none other than C#. It was eye-opening for me and it was fun the whole way through, late nights, really late nights, but overall a very satisfying journey.",
+      expandedDescription: "You've seen it on tv, at the arcades, even at casinos but have you ever seen it this sick'ning? Inspired by RuPaul's Drag Race, I wanted to make it relevant to my experiences by making it fun and LGBT-inspired. I started by flow-charting out the steps involved, then moved to wireframes and finally, building it out in Unity and C#. Have fun playing the game and make sure you make a good deal with RuPaul and his girls! (And see if you can locate the easter eggs!)",
       importance: 0,
       technologies: this.returnIconArray(["dev_csharp.svg"])
     },
-    // A41
+    // A41 ====================================================
     {
       name: "All For One",
       date: "SEPTEMBER 2020 && JAN - FEB 2021",
@@ -105,15 +109,16 @@ export class ProjectsServiceService {
       repoUrl: "https://github.com/josephracca/a41",
       liveUrl: "http://josephracca.azurewebsites.net/a41/",
       xdUrl: "",
+      unityUrl: "https://play.unity.com/mg/other/a41-jlaxc",
       screenshot1: "./../../../assets/images/projectScreenShots/a41_ss1.png",
       screenshot2: "./../../../assets/images/projectScreenShots/a41_ss2.png",
       screenshot3: "./../../../assets/images/projectScreenShots/a41_ss3.png",
-      expandedDescription: "Revisiting an Old Assignment was the essence of this project. I was one of the lucky few that got to re-do a C#/Unity project and refactor that into a JSX React project. This project really got me familiar with using ternaries, understanding functional and class components. It was an interesting shift from plain ol' vanila JavaScript, especialyl when it came to manipulating the DOM. I would say react was a pretty fun library to work in and hopefully soon, I'll be able to get more practice in it.",
+      expandedDescription: "Revisiting an Old Assignment was the essence of this project. I was one of the lucky few that got to re-do a C#/Unity project and refactor that into a JSX React project. This project really got me familiar with using ternaries, understanding functional and class components, and React lifecycle hooks. It was an interesting shift from plain ol' vanila JavaScript, especially when it came to manipulating the DOM. Because I took what I created in Unity and moved it into a React project, I used the opportunity to reimagine it as a mobile app (although it is still responsive, I modelled after a mobile-first application).",
       importance: 0,
-      technologies: this.returnIconArray(["dev_csharp.svg", "dev_react.svg", "dev_css3.svg", "dev_bootstrap.svg"])
+      technologies: this.returnIconArray(["dev_unity.svg", "dev_csharp.svg", "dev_react.svg", "dev_css3.svg", "dev_bootstrap.svg"])
     },
       
-      // flashcards
+      // flashcards ====================================================
       {
         name: "flash.commit",
         date: "",
@@ -126,6 +131,7 @@ export class ProjectsServiceService {
       repoUrl: "https://github.com/josephracca/flashCommit",
       liveUrl: "http://josephracca.azurewebsites.net/flash.commit/",
       xdUrl: "",
+      unityUrl: "",
       screenshot1: "./../../../assets/images/projectScreenShots/flash_ss1.png",
       screenshot2: "./../../../assets/images/projectScreenShots/flash_ss1.png",
       screenshot3: "./../../../assets/images/projectScreenShots/flash_ss1.png",
@@ -134,7 +140,7 @@ export class ProjectsServiceService {
       technologies: this.returnIconArray(["dev_html5.svg", "dev_css3.svg", "dev_bootstrap.svg", "dev_javascript.svg", "cc_xd.svg"])
     },
     
-    // rpsls
+    // rpsls ====================================================
     {
       name: "Rock, Paper, Scissors",
       date: "",
@@ -147,6 +153,7 @@ export class ProjectsServiceService {
       repoUrl: "https://github.com/josephracca/RPSLS",
       liveUrl: "http://josephracca.azurewebsites.net/RaccaPSLS/",
       xdUrl: "",
+      unityUrl: "",
       screenshot1: "./../../../assets/images/projectScreenShots/rpsls_ss3.png",
       screenshot2: "./../../../assets/images/projectScreenShots/rpsls_ss1.png",
       screenshot3: "./../../../assets/images/projectScreenShots/rpsls_ss2.png",
@@ -155,7 +162,7 @@ export class ProjectsServiceService {
       technologies: this.returnIconArray(["dev_html5.svg", "dev_css3.svg", "dev_bootstrap.svg", "dev_javascript.svg", "cc_xd.svg"])
     },
     
-    // top10
+    // top10 ====================================================
     // {
       //   name: "Top 10",
       //   date: "",
@@ -168,7 +175,8 @@ export class ProjectsServiceService {
       //   repoUrl: "",
       //   liveUrl: "http://josephraccainit.azurewebsites.net/TopFaves/",
       //   xdUrl: "",
-      //   screenshot1: "./../../../assets/images/projectScreenShots/fave_ss1.png",
+      // unityUrl: "",
+      //         screenshot1: "./../../../assets/images/projectScreenShots/fave_ss1.png",
       //   screenshot2: "./../../../assets/images/projectScreenShots/fave_ss2.png",
       //   screenshot3: "./../../../assets/images/projectScreenShots/fave_ss3.png",
       //   expandedDescription: "",
@@ -177,7 +185,7 @@ export class ProjectsServiceService {
       // },
 
 
-    // weather app
+    // weather app ====================================================
     {
       name: "Weather.Gogh",
       date: "",
@@ -190,6 +198,7 @@ export class ProjectsServiceService {
       repoUrl: "https://github.com/josephracca/fyreWeather",
       liveUrl: "http://josephracca.azurewebsites.net/weather.gogh2/",
       xdUrl: "",
+      unityUrl: "",
       screenshot1: "./../../../assets/images/projectScreenShots/fyre_ss1.png",
       screenshot2: "./../../../assets/images/projectScreenShots/fyre_ss1.png",
       screenshot3: "./../../../assets/images/projectScreenShots/fyre_ss1.png",
@@ -197,48 +206,50 @@ export class ProjectsServiceService {
       importance: 0,
       technologies: this.returnIconArray([])
     },
-      // random group gen
-      {
-        name: "R&OM",
-        date: "",
-        subtitle: "A Group-Generating Application",
-      text: "white",
-      color: "#17436e",
-      logo: "./../../../assets/images/proj_logos/R&OM.svg",
-      desc: "An app that allows you to add/remove names from a list, randomize a name from said list, or generate groups based on size or number of groups desired.",
-      tags: ["html", "css", "javascript", "ui"],
-      repoUrl: "https://github.com/josephracca/randomGroupsApp",
-      liveUrl: "http://josephracca.azurewebsites.net/randOM/",
-      xdUrl: "",
-      screenshot1: "./../../../assets/images/projectScreenShots/group_ss1.png",
-      screenshot2: "",
-      screenshot3: "",
-      expandedDescription: "",
-      importance: 0,
-      technologies: this.returnIconArray(["dev_html5.svg", "dev_css3.svg", "dev_bootstrap.svg", "dev_javascript.svg"])
-    },
+      // random group gen ====================================================
+      // {
+    //     name: "R&OM",
+    //     date: "",
+    //     subtitle: "A Group-Generating Application",
+    //   text: "white",
+    //   color: "#17436e",
+    //   logo: "./../../../assets/images/proj_logos/R&OM.svg",
+    //   desc: "An app that allows you to add/remove names from a list, randomize a name from said list, or generate groups based on size or number of groups desired.",
+    //   tags: ["html", "css", "javascript", "ui"],
+    //   repoUrl: "https://github.com/josephracca/randomGroupsApp",
+    //   liveUrl: "http://josephracca.azurewebsites.net/randOM/",
+    //   xdUrl: "",
+    //   unityUrl: "",
+    //   screenshot1: "./../../../assets/images/projectScreenShots/group_ss1.png",
+    //   screenshot2: "",
+    //   screenshot3: "",
+    //   expandedDescription: "",
+    //   importance: 0,
+    //   technologies: this.returnIconArray(["dev_html5.svg", "dev_css3.svg", "dev_bootstrap.svg", "dev_javascript.svg"])
+    // },
     
-    // calculator
-    {
-      name: "calculatoJr",
-      date: "",
-    subtitle: "A REACT APPLICATION",
-      text: "black",
-      color: "#009E42",
-      logo: "./../../../assets/images/proj_logos/calc.svg",
-      desc: "A simple calculator app that allowed me to learn and use React.",
-      tags: ["html", "css", "react", "javascript"],
-      repoUrl: "https://github.com/josephracca/calculator",
-      liveUrl: "http://josephracca.azurewebsites.net/calculatoJr/",
-      xdUrl: "",
-      screenshot1: "./../../../assets/images/projectScreenShots/calc_ss1.png",
-      screenshot2: "",
-      screenshot3: "",
-      expandedDescription: "Inspired by the iOS design language, specifically the calculator app, I built this calculator as a follow-along during a class lecture and styled it after to give it that refined, user-friendly, dark-mode feel. There are a few flukes in it, but overall with the time that I had to complete it, I got a spot that I am proud of.",
-      importance: 0,
-      technologies: this.returnIconArray([])
-    },
-    // upvote
+    // calculator ====================================================
+    // {
+    //   name: "calculatoJr",
+    //   date: "",
+    // subtitle: "A REACT APPLICATION",
+    //   text: "black",
+    //   color: "#009E42",
+    //   logo: "./../../../assets/images/proj_logos/calc.svg",
+    //   desc: "A simple calculator app that allowed me to learn and use React.",
+    //   tags: ["html", "css", "react", "javascript"],
+    //   repoUrl: "https://github.com/josephracca/calculator",
+    //   liveUrl: "http://josephracca.azurewebsites.net/calculatoJr/",
+    //   xdUrl: "",
+    //   unityUrl: "",
+    //   screenshot1: "./../../../assets/images/projectScreenShots/calc_ss1.png",
+    //   screenshot2: "",
+    //   screenshot3: "",
+    //   expandedDescription: "Inspired by the iOS design language, specifically the calculator app, I built this calculator as a follow-along during a class lecture and styled it after to give it that refined, user-friendly, dark-mode feel. There are a few flukes in it, but overall with the time that I had to complete it, I got a spot that I am proud of.",
+    //   importance: 0,
+    //   technologies: this.returnIconArray([])
+    // },
+    // upvote ====================================================
     // {
     //   name: "UpVote",
     //   date: "",
@@ -251,7 +262,8 @@ export class ProjectsServiceService {
     //   repoUrl: "https://github.com/josephracca/MC_13_UpVote",
     //   liveUrl: "http://josephracca.azurewebsites.net/upvote/",
     //   xdUrl: "",
-    //   screenshot1: "./../../../assets/images/projectScreenShots/upvote_ss1.png",
+    // unityUrl: "",
+    //       screenshot1: "./../../../assets/images/projectScreenShots/upvote_ss1.png",
     //   screenshot2: "./../../../assets/images/projectScreenShots/upvote_ss1.png",
     //   screenshot3: "./../../../assets/images/projectScreenShots/upvote_ss1.png",
     //   expandedDescription: "",
@@ -259,7 +271,7 @@ export class ProjectsServiceService {
     //   technologies: this.returnIconArray([])
     // },
 
-    // puppy rest
+    // puppy rest ====================================================
     // {
     //   name: "Muzzles",
     //   date: "",
@@ -272,7 +284,8 @@ export class ProjectsServiceService {
     //   repoUrl: "https://github.com/josephracca/puppy-restaurant",
     //   liveUrl: "http://josephracca.azurewebsites.net/puppy-restaurant/",
     //   xdUrl: "",
-    //   screenshot1: "./../../../assets/images/projectScreenShots/puppy_ss1.png",
+    // unityUrl: "",
+    //       screenshot1: "./../../../assets/images/projectScreenShots/puppy_ss1.png",
     //   screenshot2: "./../../../assets/images/projectScreenShots/puppy_ss2.png",
     //   screenshot3: "./../../../assets/images/projectScreenShots/puppy_ss3.png",
     //   expandedDescription: "",
@@ -280,7 +293,7 @@ export class ProjectsServiceService {
     //   technologies: this.returnIconArray([])
     // },
 
-    // hamster hotel
+    // hamster hotel ====================================================
     // {
     //   name: "Le Petite Maison",
     //   date: "",
@@ -293,7 +306,8 @@ export class ProjectsServiceService {
     //   repoUrl: "https://github.com/josephracca/HamsterHotel",
     //   liveUrl: "http://josephraccainit.azurewebsites.net/HamsterHotel/",
     //   xdUrl: "",
-    //   screenshot1: "./../../../assets/images/projectScreenShots/hamster_ss1.png",
+    // unityUrl: "",
+    //       screenshot1: "./../../../assets/images/projectScreenShots/hamster_ss1.png",
     //   screenshot2: "./../../../assets/images/projectScreenShots/hamster_ss2.png",
     //   screenshot3: "./../../../assets/images/projectScreenShots/hamster_ss3.png",
     //   expandedDescription: "",
@@ -301,47 +315,49 @@ export class ProjectsServiceService {
     //   technologies: this.returnIconArray([])
     // },
 
-    // rng v1
-    {
-      name: "Name Generator App",
-      date: "",
-      subtitle: " Version 1",
-      text: "black",
-      color: "#9B3C9F",
-      logo: "./../../../assets/images/proj_logos/random.svg",
-      desc: "A random name generator that also manipulates the DOM with each random name. This application also allows the user to input names and stores them to local storage.",
-      tags: ["basics", "DOM", "html", "css", "javascript"],
-      repoUrl: "https://github.com/josephracca/MC11_RNGv2",
-      liveUrl: "http://josephraccainit.azurewebsites.net/RNGv2/",
-      xdUrl: "",
-      screenshot1: "./../../../assets/images/projectScreenShots/random_ss1.png",
-      screenshot2: "./../../../assets/images/projectScreenShots/random_ss2.png",
-      screenshot3: "./../../../assets/images/projectScreenShots/random_ss3.png",
-      expandedDescription: "",
-      importance: 0,
-      technologies: this.returnIconArray(["dev_html5.svg", "dev_css3.svg", "dev_bootstrap.svg", "dev_javascript.svg"])
-    },
+    // rng v1 ====================================================
+    // {
+    //   name: "Name Generator App",
+    //   date: "",
+    //   subtitle: " Version 1",
+    //   text: "black",
+    //   color: "#9B3C9F",
+    //   logo: "./../../../assets/images/proj_logos/random.svg",
+    //   desc: "A random name generator that also manipulates the DOM with each random name. This application also allows the user to input names and stores them to local storage.",
+    //   tags: ["basics", "DOM", "html", "css", "javascript"],
+    //   repoUrl: "https://github.com/josephracca/MC11_RNGv2",
+    //   liveUrl: "http://josephraccainit.azurewebsites.net/RNGv2/",
+    //   xdUrl: "",
+    //   unityUrl: "",
+    //   screenshot1: "./../../../assets/images/projectScreenShots/random_ss1.png",
+    //   screenshot2: "./../../../assets/images/projectScreenShots/random_ss2.png",
+    //   screenshot3: "./../../../assets/images/projectScreenShots/random_ss3.png",
+    //   expandedDescription: "",
+    //   importance: 0,
+    //   technologies: this.returnIconArray(["dev_html5.svg", "dev_css3.svg", "dev_bootstrap.svg", "dev_javascript.svg"])
+    // },
 
-    // DOM
-    {
-      name: "DOM Manipulations",
-      date: "",
-      subtitle: "Foundations in HTML, CSS, & JS",
-      text: "white",
-      color: "#3e3e3e",
-      logo: "./../../../assets/images/proj_logos/DOM.svg",
-      desc: "This was the first time I used Javascript to manipulate DOM elements. This really set the foundation for my undersstanding of DOM manipulations.",
-      tags: ["basics", "fundamentals", "html", "css", "DOM"],
-      repoUrl: "https://josephracca.github.io/josephracca.github.io/",
-      liveUrl: "http://josephraccainit.azurewebsites.net/DOM/",
-      xdUrl: "",
-      screenshot1: "./../../../assets/images/projectScreenShots/dom_ss1.png",
-      screenshot2: "",
-      screenshot3: "",
-      expandedDescription: "",
-      importance: 0,
-      technologies: this.returnIconArray(["dev_html5.svg", "dev_css3.svg", "dev_bootstrap.svg", "dev_javascript.svg"])
-    },
+    // DOM ====================================================
+    // {
+    //   name: "DOM Manipulations",
+    //   date: "",
+    //   subtitle: "Foundations in HTML, CSS, & JS",
+    //   text: "white",
+    //   color: "#3e3e3e",
+    //   logo: "./../../../assets/images/proj_logos/DOM.svg",
+    //   desc: "This was the first time I used Javascript to manipulate DOM elements. This really set the foundation for my undersstanding of DOM manipulations.",
+    //   tags: ["basics", "fundamentals", "html", "css", "DOM"],
+    //   repoUrl: "https://josephracca.github.io/josephracca.github.io/",
+    //   liveUrl: "http://josephraccainit.azurewebsites.net/DOM/",
+    //   xdUrl: "",
+    //   unityUrl: "",
+    //   screenshot1: "./../../../assets/images/projectScreenShots/dom_ss1.png",
+    //   screenshot2: "",
+    //   screenshot3: "",
+    //   expandedDescription: "",
+    //   importance: 0,
+    //   technologies: this.returnIconArray(["dev_html5.svg", "dev_css3.svg", "dev_bootstrap.svg", "dev_javascript.svg"])
+    // },
 
     // More
     // {
@@ -356,7 +372,8 @@ export class ProjectsServiceService {
     //   repoUrl: "https://github.com/josephracca",
     //   liveUrl: "",
     //   xdUrl: "",
-    //   screenshot1: "./../../../assets/images/projectScreenShots/.png",
+    // unityUrl: "",
+    //       screenshot1: "./../../../assets/images/projectScreenShots/.png",
     //   screenshot2: "./../../../assets/images/projectScreenShots/.png",
     //   screenshot3: "./../../../assets/images/projectScreenShots/.png",
     //   expandedDescription: "",
@@ -377,7 +394,8 @@ export class ProjectsServiceService {
     //   repoUrl: "",
     //   liveUrl: "",
     //   xdUrl: "",
-    //   screenshot1: "./../../../assets/images/projectScreenShots/.png",
+    // unityUrl: "",
+    //       screenshot1: "./../../../assets/images/projectScreenShots/.png",
     //   screenshot2: "./../../../assets/images/projectScreenShots/.png",
     //   screenshot3: "./../../../assets/images/projectScreenShots/.png",
     //   expandedDescription: "",

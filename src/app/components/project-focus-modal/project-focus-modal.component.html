@@ -58,8 +58,8 @@
                 <div class="col-12 col-lg-8">
                     <p class="date">{{currentProject.date}}</p>
                     <h3 class="mt-3 white">{{currentProject.name}}</h3>
-                    <p class="mt-3 description white">{{currentProject.expandedDescription ?
-                        currentProject.expandedDescription : currentProject.desc }}</p>
+                    <p class="mt-3 description white">{{currentProject.desc}}</p>
+                    <p *ngIf="currentProject.desc && currentProject.expandedDescription" class="mt-3 description white">{{currentProject.expandedDescription}}</p>
                 </div>
                 <div class="col-12 col-lg-4 right-side">
                     <div class="my-3 description">
@@ -87,6 +87,14 @@
                             </a>
                         </button>
 
+                        <button class="btn btn-info btn-block" *ngIf="currentProject.unityUrl">
+                            <a class="noUnderline" href={{currentProject.unityUrl}} target="_blank">
+                                <span>Play the Unity Game </span>
+                                <img style="width: 24.618px" *ngIf="currentProject.unityUrl"
+                                    src="./../../../assets/images/project_card/dev_unity.svg" />
+                            </a>
+                        </button>
+
                     </div>
                     <p class="mt-3 description">Tagged with:</p>
                     <span class="hashtag" *ngFor="let tag of currentProject.tags">#{{tag}}</span><span> </span>
@@ -95,7 +103,7 @@
             </div>
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-dark btn-block" (click)="modal.close('Close click')">Back to Project
+            <button type="button" class="btn btn-light btn-block" (click)="modal.close('Close click')">Back to Project
                 Gallery</button>
 
         </div>

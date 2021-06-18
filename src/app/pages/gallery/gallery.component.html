@@ -9,8 +9,8 @@
     </h3>
     <hr>
     <div class="row px-0 mx-0 py-4">
-        <h5>
-            filter by:
+        <h4>
+            <span style="font-size: 1rem;">filter by: </span>
             <!-- <button class="hashtag hashtagLg" (click)="filterProjects('process')">#process</button> -->
             <button id="js" class="hashtag hashtagLg"
                 (click)="filterProjects('javascript', $event.target)">#javascript</button>
@@ -24,7 +24,7 @@
             <button class="hashtag hashtagLg" (click)="filterProjects('css', $event.target)">#css</button>
             <button class="hashtag hashtagLg" (click)="filterProjects('html', $event.target)">#html</button>
             <!-- <button *ngIf="filterOn" class="hashtag hashtagLg" (click)="filterProjects('html', $event.target)">× Clear Filter</button> -->
-        </h5>
+        </h4>
     </div>
 
     <!-- ORIGINAL -->
@@ -40,7 +40,7 @@
 
                         <div style="height: 175px">
                             <div class="row d-flex justify-content-center align-items-center" style="height: 100%">
-                                <img src="{{project.logo}}" />
+                                <img src="{{project.logo}}" alt="project logo for {{project.name}}" />
                             </div>
                         </div>
                         <hr [style.border-color]="project.text" style="opacity: 10%">
@@ -50,7 +50,7 @@
                             <!-- <h5 [style.color]="project.text" class="text-center mb-0"
                                 style="text-transform: uppercase; font-size: 1rem;">{{project.subtitle}}</h5> -->
                             <p [style.color]="project.text"
-                                style="opacity: 60%; text-transform: uppercase; font-size: .8rem;"
+                                style="opacity: 90%; text-transform: uppercase; font-size: .8rem;"
                                 class="text-center mb-0 subtitle-front">{{project.subtitle}}</p>
                         </div>
 

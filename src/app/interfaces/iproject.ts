@@ -10,6 +10,7 @@ export interface IProject {
     repoUrl: string,
     liveUrl: string,
     xdUrl: string,
+    unityUrl: string,
     screenshot1: string,
     screenshot2: string,
     screenshot3: string,

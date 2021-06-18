@@ -11,6 +11,10 @@
                 <p class="title" #titlePass>{{project.name}}</p>
                 <p class="desc">{{project.desc}}</p>
             </div>
+            <div *ngIf="project.unityUrl">
+                <a href={{project.unityUrl}} target="_blank"><img class="iconFill xD"
+                        src="./../../../assets/images/project_card/dev_unity.svg" alt="open Xd prototype" /></a>
+            </div>
             <div *ngIf="project.repoUrl">
                 <a href={{project.liveUrl}} target="_blank"><img class="iconFill"
                         src="./../../../assets/images/project_card/Icon awesome-github.svg" alt="open in github" /></a>

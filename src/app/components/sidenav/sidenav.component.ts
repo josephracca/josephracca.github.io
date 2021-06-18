@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -16,6 +17,12 @@ export class SidenavComponent implements OnInit {
 
   toggleExt() {
     this.openExt = !this.openExt;
+  }
+
+  doSomethingCool(elementId: string): void {
+    // console.log("go down");
+    // this.viewportScroller.scrollToAnchor(elementId);
+    document.getElementById(elementId)?.scrollIntoView({ behavior: "smooth" });
   }
 
 }
